@@ -53,7 +53,7 @@ body {
     margin: var(--header-height) 0 0 0;
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    background-color: yellow;
+    /* background-color: yellow; */
     color: var(--couleur-texte);
     line-height: 1.6;
 }
@@ -305,6 +305,10 @@ a {
 
 /* about */
 
+.about {
+    background-color: yellow;
+}
+
 .section-about-me {
     color: #373D3F;
 }
@@ -371,7 +375,8 @@ a {
 /* skills */
 
 .skills {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    
 }
 
 #hard-skills {
@@ -568,19 +573,24 @@ brique-top {
 
 /* education */
 
+.education {
+    background: linear-gradient(360deg, rgba(244,119,6,1) 2%, rgba(249,181,50,1) 42%, rgba(251,229,9,1) 100%);
+}
+
 .education__container {
-    row-gap: 4rem;
+    row-gap: 0;
 }
 
 .education__content {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
-    /* margin-bottom: 2rem; */
+    margin-bottom: -0.5rem;
 }
 
 .education__year, .education__race {
     font-size: var(--h3-font-size);
-    margin-bottom: .25rem;
+    margin-bottom: .3rem;
+    
 }
 
 .education__university, .education__specialty {
@@ -602,7 +612,7 @@ brique-top {
     display: inline-block;
     width: 12px;
     height: 12px;
-    background-color: var(--couleur-de-fond);
+    background-color: #0E2433;
     border-radius: 50%;
 }
 
@@ -612,15 +622,15 @@ brique-top {
     transform: translate(-4px,-4px);
     width: 20px;
     height: 20px;
-    border: 1px solid var(--couleur-de-fond);
+    border: 1px solid #0E2433;
     border-radius: 50%;
 }
 
 .education__line {
     display: block;
-    height: 80%;
+    height: 3rem;
     width: 2px;
-    background-color: var(--couleur-de-fond);
+    background-color: #0E2433;
     transform: translate(5px,-4px);
 }
 

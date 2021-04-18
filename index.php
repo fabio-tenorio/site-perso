@@ -75,7 +75,7 @@
                 </div>
                 <div class="about__badge">
                     <div class="about__information">
-                        <h3 class="about__information-title">Information</h3>
+                        <h3 class="about__information-title">Profil</h3>
                         <div class="about__information-data">
                             <img id="moi2" src="assets/images/moi2.jpg" alt="Fabio Tenorio de Carvalho">
                             <!-- <i class="bi bi-person about__information-icon"></i> -->
@@ -184,14 +184,13 @@
             </article>
         </section>
         <section class="education section">
-            <span class="section-subtitle">Qualification</span>
-            <h2 class="section-title">My Education</h2>
+            <!-- <span class="section-subtitle">Qualification</span> -->
+            <h2 class="section-title">Ma formation</h2>
             <div class="education__container bd-grid">
-
                 <div class="education__content">
                     <div>
                         <h3 class="education__year">2020 - 2021</h3>
-                        <a href="https://laplateforme.io/" class="education__university">La Plateforme_</a>
+                        <a target="blank" href="https://laplateforme.io/" class="education__university">La Plateforme_</a>
                     </div>
 
                     <div class="education__time">
@@ -200,8 +199,8 @@
                     </div>
 
                     <div>
-                        <h3 class="education__race">Web developer</h3>
-                        <span class="education__specialty">fullstack</span>
+                        <h3 class="education__race">développeur</h3>
+                        <span class="education__specialty">web & mobile</span>
                     </div>
                 </div>
 
@@ -224,8 +223,8 @@
 
                 <div class="education__content">
                     <div>
-                        <h3 class="education__year">2004-2015</h3>
-                        <span class="education__university">UFMG</span>
+                        <h3 class="education__year">2004-2008</h3>
+                        <span class="education__university">Université Fédérale de Minas Gerais</span>
                     </div>
 
                     <div class="education__time">
@@ -234,7 +233,7 @@
                     </div>
 
                     <div>
-                        <h3 class="education__race">Master Degree</h3>
+                        <h3 class="education__race">Master</h3>
                         <span class="education__specialty">Philosophy</span>
                     </div>
                 </div>
@@ -242,7 +241,7 @@
                 <div class="education__content">
                     <div>
                         <h3 class="education__year">1998-2002</h3>
-                        <span class="education__university">UFPE</span>
+                        <span class="education__university">Université Fédérale de Pernambouc</span>
                     </div>
 
                     <div class="education__time">
@@ -251,8 +250,8 @@
                     </div>
 
                     <div>
-                        <h3 class="education__race">Bachelor Degree</h3>
-                        <span class="education__specialty">Journalism</span>
+                        <h3 class="education__race">Licence</h3>
+                        <span class="education__specialty">École de Journalisme et de Communication</span>
                     </div>
                 </div>
 
