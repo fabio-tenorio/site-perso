@@ -67,10 +67,10 @@
             <div class="about__container bd-grid">
                 <div class="about__data">
                     <p class="about__description">
-                        Pendant 15 années, j'ai exercé passionnement le métier d'enseignant et de chercheur au Brésil,
+                        J'ai exercé passionnement, pendant 15 ans, le métier d'enseignant et de chercheur au Brésil,
                         mon pays d'origine. En France depuis septembre 2019, j'ai décidé de rélier deux anciennes passions
                         - l'éducation et l'informatique - afin de faire convergir mes compétences vers un nouveau objectif
-                        professionnel: contribuer aux avancées technologiques de l'EdTech.
+                        professionnel: contribuer aux avancées technologiques dans le secteur des EdTech's.
                     </p>
                 </div>
                 <div class="about__badge">
@@ -118,104 +118,67 @@
         <section class="skills section" id="competences">
             <!-- <span class="section-subtitle">Why choose me</span> -->
             <article id="hardskills">
-                <h2 class="section-title py-5">My hard skills</h2>
-                <div class="skills__container bd-grid">
-                    <div class="skills__content">
-                        <h3 class="skills_subtitle">Frontend</h3>
-                        <div class="skills__data">
-                            <span class="skills__name"><img class="logo-skills mx-2" src="assets/images/logohtml.png"></span>
-                            <span class="skills__number">80%</span>
-                            <span class="skills__bar skills__html"></span>
+                <h2 class="section-title py-2">Mes hard skills</h2>
+                <div class="container">
+                    <div class="row brique-ligne">
+                        <div class="col brique brique-top">
+                            Symfony
                         </div>
-    
-                        <div class="skills__data">
-                            <span class="skills__name"><img class="logo-skills mx-2" src="assets/images/logocss.png"></span>
-                            <span class="skills__number">90%</span>
-                            <span class="skills__bar skills__js"></span>
+                        <div class="col brique brique-top">
+                            React
                         </div>
-    
-                        <div class="skills__data">
-                            <span class="skills__name"><img class="logo-skills mx-2" src="assets/images/logojs.jpg"></span>
-                            <span class="skills__number">70%</span>
-                            <span class="skills__bar skills__react"></span>
-                        </div>
-    
-                        <!-- <div class="skills__data">
-                            <span class="skills__name">Angular</span>
-                            <span class="skills__number">60%</span>
-                            <span class="skills__bar skills__angular"></span>
-                        </div> -->
                     </div>
-    
-                    <div class="skills__content">
-                        <h3 class="skills_subtitle">Backend</h3>
-                        <div class="skills__data">
-                            <span class="skills__name"><img class="logo-skills mx-2" src="assets/images/logophp.png"></span>
-                            <span class="skills__number">80%</span>
-                            <span class="skills__bar skills__php"></span>
+                    <div class="row brique-ligne">
+                        <div class="col brique">
+                        PHP
                         </div>
-    
-                        <div class="skills__data">
-                            <span class="skills__name"><img class="logo-skills mx-2" src="assets/images/logolinux.png"></span>
-                            <span class="skills__number">70%</span>
-                            <span class="skills__bar skills__node"></span>
+                        <div class="col brique">
+                        MySQL
                         </div>
-    
-                        <div class="skills__data">
-                            <span class="skills__name"><img class="logo-skills mx-2" src="assets/images/logomysql.png"></span>
-                            <span class="skills__number">30%</span>
-                            <span class="skills__bar skills__c"></span>
+                        <div class="col brique">
+                        Javascript
                         </div>
-    
-                        <!-- <div class="skills__data">
-                            <span class="skills__name"><img class="logo-skills mx-2" src="assets/images/logoruby.webp"></span>
-                            <span class="skills__number">40%</span>
-                            <span class="skills__bar skills__python"></span>
-                        </div> -->
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="col brique">
+                        HTML
+                        </div>
+                        <div class="col brique">
+                        CSS
+                        </div>
+                        <div class="col brique">
+                        Linux
+                        </div>
+                        <div class="col brique">
+                        Git
+                        </div>
+                    </div>
             </article>
             <article id="softskills">
-            <h2 class="section-title py-5">My soft skills</h2>
-            <div class="skills__container bd-grid">
-                <div class="skills__content">
-                    <h3 class="skills_subtitle">Situational</h3>
-                    <div class="skills__data">
-                        <span class="skills__name">Adaptability</span>
-                        <span class="skills__number">80%</span>
-                        <span class="skills__bar skills__html"></span>
+            <h2 class="section-title py-5">Mes <em>soft skills</em></h2>
+            <!-- <div class="skills__container bd-grid"> -->
+                <div class="skills__content container">
+                    <div class="softskills_row">
+                        <div class="movingicon">
+                            problem solver
+                        </div>
+                        <div class="movingicon">
+                            Curieux
+                        </div>
+                        <div class="movingicon">
+                            Communicatif
+                        </div>
                     </div>
-
-                    <div class="skills__data">
-                        <span class="skills__name">Decision making</span>
-                        <span class="skills__number">90%</span>
-                        <span class="skills__bar skills__js"></span>
-                    </div>
-
-                    <h3 class="skills_subtitle">Personal</h3>
-                    <div class="skills__data">
-                        <span class="skills__name">Written and Oral Communication</span>
-                        <span class="skills__number">80%</span>
-                        <span class="skills__bar skills__html"></span>
-                    </div>
-
-                    <div class="skills__data">
-                        <span class="skills__name">Problem Solving</span>
-                        <span class="skills__number">90%</span>
-                        <span class="skills__bar skills__js"></span>
-                    </div>
-
-                    <h3 class="skills_subtitle">Interpersonal</h3>
-                    <div class="skills__data">
-                        <span class="skills__name">Teamwork</span>
-                        <span class="skills__number">80%</span>
-                        <span class="skills__bar skills__html"></span>
-                    </div>
-
-                    <div class="skills__data">
-                        <span class="skills__name">Openness to criticism</span>
-                        <span class="skills__number">90%</span>
-                        <span class="skills__bar skills__js"></span>
+                    <div class="softskills_row">
+                        <div class="movingicon">
+                            Collaboratif
+                        </div>
+                        <div class="movingicon">
+                            Patient
+                        </div>
+                        <div class="movingicon">
+                            Organisé
+                        </div>
                     </div>
                 </div>
             </article>

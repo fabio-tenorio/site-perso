@@ -370,6 +370,10 @@ a {
 
 /* skills */
 
+.skills {
+    background-color: whitesmoke;
+}
+
 #hard-skills {
     position: relative;
     /* display: flex;
@@ -391,6 +395,24 @@ a {
     background-size: cover;
     background-position: top-center;
     opacity: 0.15;
+}
+
+.brique-ligne {
+    margin: 5px 0;
+}
+
+.brique {
+    background-color: #cb4154;
+    border-radius: 3px;
+    width: 3rem;
+    padding: 4px;
+    margin: 0 3px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+brique-top {
+    width: 2rem;
 }
 
 .logo-skills {
@@ -419,6 +441,66 @@ a {
     background-size: cover;
     background-position: top-center;
     opacity: 0.25;
+}
+
+/* moving-softskills */
+.skills__content {
+    position: relative;
+    width: 50%;
+}
+
+.softskills_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.movingicon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: auto;
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 50%;
+    /* position: absolute; */
+    -webkit-animation: movingicons 3s linear infinite;
+       -moz-animation: movingicons 3s linear infinite;
+         -o-animation: movingicons 3s linear infinite;
+            animation: movingicons 3s linear infinite;
+    transition: border-radius 1s;
+}
+
+.movingicon:hover {
+    border-radius: 5px;
+}
+
+@-webkit-keyframes movingicons {
+    from { -webkit-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+
+@-moz-keyframes movingicons {
+    from { -moz-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+
+@-o-keyframes movingicons {
+    from { -o-transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+
+@keyframes movingicons {
+    from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
 }
 
 .skills__container {

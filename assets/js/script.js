@@ -62,10 +62,10 @@ function scrollActive() {
         const sectionTop = current.offsetTop - 50
         sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('nav-item .lien[href*='+ sectionId +']').classList.add('active')
-        } else {
-            document.querySelector('nav-item .lien[href*='+ sectionId +']').classList.remove('active')
-        }
+        // if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        //     document.querySelector('nav-item .lien[href*='+ sectionId +']').classList.add('active')
+        // } else {
+        //     document.querySelector('nav-item .lien[href*='+ sectionId +']').classList.remove('active')
+        // }
     })
 }

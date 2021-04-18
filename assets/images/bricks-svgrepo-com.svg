@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- <?xml version="1.0" encoding="iso-8859-1"?> -->
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 502.406 502.406" style="enable-background:new 0 0 502.406 502.406;" xml:space="preserve">
 <path style="fill:#BF0A4F;" d="M91.262,376.186c0,1.827-1.489,3.324-3.324,3.324H3.308c-1.827,0-3.308-1.489-3.308-3.324v-35.675
 	c0-1.827,1.481-3.324,3.308-3.324h84.63c1.827,0,3.324,1.489,3.324,3.324C91.262,340.512,91.262,376.186,91.262,376.186z"/>
-<path style="fill:#9B0542;" d="M0,340.512c0-1.827,1.481-3.324,3.308-3.324h84.63c1.827,0,3.324,1.489,3.324,3.324v35.675
+<path id="brique1" style="fill:#9B0542;" d="M0,340.512c0-1.827,1.481-3.324,3.308-3.324h84.63c1.827,0,3.324,1.489,3.324,3.324v35.675
 	c0,1.827-1.489,3.324-3.324,3.324"/>
 <path style="fill:#BF0A4F;" d="M194.048,376.186c0,1.827-1.489,3.324-3.324,3.324h-84.63c-1.827,0-3.324-1.489-3.324-3.324v-35.675
 	c0-1.827,1.489-3.324,3.324-3.324h84.63c1.827,0,3.324,1.489,3.324,3.324L194.048,376.186L194.048,376.186z"/>
