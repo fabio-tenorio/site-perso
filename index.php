@@ -31,7 +31,7 @@
                         <a class="nav-link lien" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle lien" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle lien active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Plus qu'un développeur
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -48,84 +48,67 @@
     <main>
         <section class="container-fluid py-5" id="accueil">
             <div id="presentation">
-                <img id="moi" src="assets/images/moi.jpg" alt="Fabio Tenorio de Carvalho">
+                <img id="img-moi" src="assets/images/moi.jpg" alt="Fabio Tenorio de Carvalho">
                 <!-- faire un tooltip bootstrap sur l'image -->
                 <h1 class="text-light mt-5">Fabio Tenorio</h1>
                 <p class="text-light text-center">développeur web</p>
                 <a class="nav-link text-center" id="email" href="mailto:fabiovalho@gmail.com">fabiovalho@gmail.com</a>
             </div>
             <div class="reseau-social">
-                <a href="www.linkedin.com/in/fabiotenoriodecarvalho"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/fabio-tenorio"><i class="bi bi-github"></i></a>
-                <a href="https://twitter.com/fabiotapajonico"><i class="bi bi-twitter"></i></a>
+                <a target="blank" href="https://www.linkedin.com/in/fabiotenoriodecarvalho"><img class="logo-reseau" src="assets/images/linkedin.png"></a>
+                <a target="blank" href="https://github.com/fabio-tenorio"><img class="logo-reseau" src="assets/images/Octocat.png"></a>
+                <a target="blank" href="https://twitter.com/fabiotapajonico"><img class="logo-reseau" src="assets/images/twitter.png"></a>
             </div>
-            <a download="" href="../assets/Fabio TenorIo de carvalho.pdf" class="resume btn btn-primary col-sm-6 m-auto btn-lg">download resume</a>
+            <a download="" href="assets/moncv.pdf" id="cv" class="btn btn-warning col-sm-6 m-auto btn-lg">télécharger mon <em>curriculum vitae</em></a>
         </section>
-        <!-- <section id="accueil">
-            <div class="home__container bd-grid">
-                <div class="home__data">
-                    <div class="home__img">
-                        <img id="moi" src="assets/images/moi.jpg" alt="Fabio Tenorio de Carvalho">
-                    </div>
-                    <h1 class="home__title">Fabio Tenorio</h1>
-                    <span class="home__profession">développeur web</span>
-                    <span class="home__profession">enseignant</span>
-                    <span class="home__profession">multilingue</span>
-                </div>
-            </div>
-        </section> -->
-        <section class="about section" id="moi">
+        <section id="moi" class="about section">
             <!-- <span class="section-subtitle">My intro</span> -->
-            <h2 class="section-title section-about-me">About me</h2>
-
+            <h2 class="section-title section-about-me">Qui suis-je?</h2>
             <div class="about__container bd-grid">
                 <div class="about__data">
-                    <p class="about__description">I'm a junior web and mobile developer with a background experience as teacher and researcher in Logic and Philosophy of Science.</p>
-                    <img src="assets/images/fabio.jpg" alt="" class="about__img">
+                    <p class="about__description">
+                        Pendant 15 années, j'ai exercé passionnement le métier d'enseignant et de chercheur au Brésil,
+                        mon pays d'origine. En France depuis septembre 2019, j'ai décidé de rélier deux anciennes passions
+                        - l'éducation et l'informatique - afin de faire convergir mes compétences vers un nouveau objectif
+                        professionnel: contribuer aux avancées technologiques de l'EdTech.
+                    </p>
                 </div>
-
-                <div>
+                <div class="about__badge">
                     <div class="about__information">
                         <h3 class="about__information-title">Information</h3>
-                        
                         <div class="about__information-data">
-                            <i class="bi bi-person about__information-icon"></i>
+                            <img id="moi2" src="assets/images/moi2.jpg" alt="Fabio Tenorio de Carvalho">
+                            <!-- <i class="bi bi-person about__information-icon"></i> -->
                             <span>Fabio Tenorio</span>
-                        </div>
-                        <div class="about__information-data">
-                            <i class="bi bi-phone-vibrate about__information-icon"></i>
-                            <span>+33 6 68 61 30 31</span>
                         </div>
                         <div class="about__information-data">
                             <i class="bi bi-envelope about__information-icon"></i>
                             <a href="mailto:fabiovalho@gmail.com">fabiovalho@gmail.com</a>
                         </div>
                     </div>
-    
                     <div class="about__information">
-                        <h3 class="about__information-title">Experience</h3>
+                        <h3 class="about__information-title">Expérience</h3>
                         
                         <div class="about__information-data">
                             <i class="bi bi-code-slash about__information-icon"></i>
                             <div>
-                                <span class="about__information-subtitle">1 year experience</span>
-                                <span class="about__information-subtitle">as web developer</span>
+                                <span class="about__information-subtitle">développeur web & web mobile</span>
+                                <span class="about__information-subtitle">à La Plateforme_ (Marseille)</span>
                             </div>
                         </div>
-    
                         <div class="about__information-data">
                             <i class="bi bi-briefcase about__information-icon"></i>
                             <div>
-                                <span class="about__information-subtitle">10+ projects</span>
-                                <span class="about__information-subtitle">completed</span>
+                                <span class="about__information-subtitle">plus de 16 projets informatiques</span>
+                                <span class="about__information-subtitle">réalisés en groupe ou individuellement</span>
                             </div>
                         </div>
     
                         <div class="about__information-data">
                             <i class="bi bi-easel about__information-icon"></i>
                             <div>
-                                <span class="about__information-subtitle">15+ experience</span>
-                                <span class="about__information-subtitle">as teacher and researcher</span>
+                                <span class="about__information-subtitle">plusieurs conférences, cours et textes</span>
+                                <span class="about__information-subtitle">en tant qu'enseignant et chercheur</span>
                             </div>
                         </div>
                     </div>
