@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <title>Liste de naissance | Le formulaire pour ajouter un article à la liste</title>
+        <link rel="stylesheet" href="liste.css">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Special+Elite&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <p class="logoname">Lefilsde</p>
+                <p class="logoname"><span class="logonamecontrast">Cl</span>yde&</p>
+                <p class="logoname">B<span class="logonamecontrast">onnie</span></p>
+            </div>
+            <nav id="headermenu">                
+                <a href="formulaire.html">ajouter un article</a>
+                <a href="#">contacter le site</a>
+                <a href="#">partager la liste</a>
+            </nav>
+            <form action="liste-naissance.html" id="searchbar">
+                <input type="text" id="searchlist" name="searchlist" placeholder="je cherche dans la liste...">
+                <button type="button"><img src="images/lupelogo.png" alt="lupe icon"></button>
+            </form>
+            <div id="panier">
+                <img src="images/panier.png" alt="icone d'un panier">
+                <p>panier</p>
+            </div>
+        </header>
+        <main id="mainformulaire">
+            <form id="mainform" method="get" action="liste.html">
+                <h1>J'ajoute un article à la liste</h1>
+                <div class="formitem">
+                    <label class="formlabel" for="articlename">Nom de l'article</label>
+                    <input type="text" id="articlename" name="articlename" placeholder="écrivez ici le nom de l'article..." size="40">
+                </div>
+                <div class="formitem">
+                    <label class="formlabel" for="articleimg">Une image de l'article</label>
+                    <input type="file" id="articleimg" name="articleimg">
+                </div>
+                <div class="formitem">
+                    <label class="formlabel" for="category">Catégorie</label>
+                    <select id="category" name="category">
+                        <option value="" selected="selected" disabled="disabled">-- sélectionnez une catégorie --</option>
+                        <option value="primary">déco/chambre</option>
+                        <option value="secondary">éveil</option>
+                        <option value="further">repas</option>
+                        <option value="higher">bain/hygiène</option>
+                        <option value="postgraduate">sortie</option>
+                    </select>
+                </div>
+                <div class="formitem">
+                    <label class="formlabel" for="description">Description</label><br/>
+                    <textarea id="description" rows="8" cols="40">Décrivez l'article en quelques mots</textarea>
+                </div>
+                <div class="formitem">
+                    <label class="formlabel" for="articleurl">Un site internet où l'acheter en ligne</label>
+                    <input type="url" id="articleurl" name="articleurl" placeholder="copiez ici le lien" size="40">
+                </div>
+                <div class="formradio">
+                    <label class="formlabel">L'article est-il urgent pour la famille?</label>
+                    <div>
+                        <input type="radio" id="oui" name="oui" value="oui">
+                        <label class="formlabel" for="oui">Oui</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="non" name="non" value="non">
+                        <label class="formlabel" for="non">Non</label>
+                    </div>
+                </div>
+                <div class="formitem">
+                    <input class="linkbutton" type="submit" value="ajouter à la liste">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <article>
+                <h3>La liste de naissance</h3>
+                <p>Cette liste de naissance n'est qu'un exercice, une occasion de plus pour pratiquer le html et le css.
+                    Cependant, rien n'empêche de l'utiliser, une fois qu'il soit achevé, comme point de départ pour d'autres projets</p>                
+            </article>
+            <article>
+                <h3>À propos</h3>
+                <ul>
+                    <li><a href="#">Contactez-nous</a></li>
+                    <li><a href="#">Qui sommes-nous?</a></li>
+                    <li><a href="#">Blog de la Liste de Naissance</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Besoin d'aide?</h3>
+                <ul>
+                    <li><a href="#">Vidéos explicatives</a></li>
+                    <li><a href="#">Comment ça marche</a></li>
+                    <li><a href="#">F.A.Q.</a></li>
+                </ul>
+            </article>
+        </footer>
+    </body>
+</html>

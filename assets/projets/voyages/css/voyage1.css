@@ -1,0 +1,245 @@
+
+.chead1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+#cheada{
+    display: flex;
+    flex-direction: column;
+    width: 45em;
+    height: 15em;
+}
+#chead1a {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    height: 10vh;
+    /* width: 45em; */
+    margin: 0;
+    padding: 0;
+}
+#chead1b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#chead1b img{
+    width: 5em;
+    height: 5em;
+}
+#cny{
+    width: 500px;
+    height: 250px;
+}
+#chead1c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Henny Penny', cursive;
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+/* CODE CSS COMMUN */
+#cheadb{
+    width: 31em;
+    padding: 0 15px;
+  
+}
+#csearch1{
+    font-size: 2em;
+  
+}
+#csearch2{
+   
+    width: 26em;
+    height: 3em;
+}
+.cslide{
+    width: 500px;
+    overflow: hidden;
+}
+.cslide1{
+    width: calc(500px * 3);
+    animation: glisse 10S infinite;
+}
+.cbody{
+   
+    background-color:	#000080;
+    
+}
+.cfoot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4em;  
+    background-color: blue;
+}
+ .ch1{
+     display: flex;
+     justify-content: center;
+    font-size: 2vh;
+}
+#cletter{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 16em;
+}
+#ccontact1{
+    display:flex;
+    justify-content: center;
+    width: 16em;
+    height: 3em;
+}
+#ctrouver1{
+    display:flex;
+    justify-content: center;
+    width: 16em;
+    height: 3em;
+}
+#csuivez{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.csuivez1{
+    width: 2em;
+    height: 2em;
+}
+.cdec{
+    list-style: none;
+}
+#cemail{
+    display:flex;
+    justify-content: center;
+    width: 16em;
+    height:3em;
+
+}
+.cslide2{
+    float: left;
+    height: 250px;
+}
+  .cusa{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      
+  }
+
+  #cmain {
+      width: 100%;
+  }
+  #cusa1{
+    width: 20em;
+    height: 20em;
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  }
+  #cusa4  {
+    animation-duration: 4s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+ }
+ .cslid{
+        width: 100%;
+        height: 90vh;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        background-color: #000;
+        opacity: 1;
+        z-index: 0;
+ }
+ #cslid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: round 15s infinite;
+    -webkit-animation-name: round;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+}
+ #cslid1{
+    -webkit-animation-delay: 10s;
+ }
+ #cslid1{
+    -webkit-animation-delay: 5s;
+ }
+ #cslid1{
+    -webkit-animation-delay: 0s;
+ }
+#cusa2{
+}
+#cusa3{
+    width: 29em;
+    height: 20em;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);   
+}
+.cart1{
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 6em;
+    margin-left: 8em;
+    margin-right: 8em; */
+    background-color: white;
+    width: 100%;
+}
+.csec1a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    margin-right: 5em;
+    margin-left: 2em;
+}
+
+.ccolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ch2{
+    font-family: 'Itim', cursive;
+
+}
+#phi1 img{
+    width: 20em;
+    height: 12em;
+}
+#lv1 img{
+    width: 20em;
+    height: 12em;
+}
+@keyframes glisse {
+    0%{        transform:translate(0);
+}
+10%{        transform:translate(0);
+}
+    33%{
+    transform:translate(-500px);
+}
+43%{
+    transform:translate(-500px);
+}
+    66%{
+    transform:translate(-1000px);
+}
+76%{
+    transform:translate(-1000px);
+}
+   100%{
+    transform:translate(0px);
+}
+

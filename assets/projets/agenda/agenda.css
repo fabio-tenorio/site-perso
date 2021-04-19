@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    --work: darkgreen;
+    --personal: red;
+    --travel: orange;
+    --study: blue;
+}
+
+/*
+font-family: 'Cinzel', serif;
+font-family: 'Cormorant', serif;
+font-family: 'Sacramento', cursive;*/
+
+/* the idea is to give the impression of a traveler's notebook at the early 1990's.
+Use the typewriter effect to the title of the home page and the formulary.*/
+
+a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.5);
+}
+
+a:visited {
+  color: rgba(0,0,0,0.5);
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f5de;
+  background-image: linear-gradient(to right, rgba(255,210,0,0.4), rgba(200, 160, 0, 0.1) 11%, rgba(0,0,0,0) 35%, rgba(200, 160, 0, 0.1) 65%);
+  box-shadow: inset 0 0 75px rgba(255,210,0,0.3), inset 0 0 20px rgba(255,210,0,0.4), inset 0 0 30px rgba(220,120,0,0.8);
+  color: rgba(0,0,0,0.5);
+  padding: 2em;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#headerlogo {
+  width: 15vh;
+  margin-left: 15px;
+}
+
+#headerlogo:hover {
+  opacity:0.6;
+}
+
+#titlelink {
+  flex-grow: 2;
+  text-align: center;
+}
+
+/* styling the dropdown menu */
+
+#headerlinks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#littlebars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1em;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.headerbar {
+  border: 2px solid rgba(0,0,0,0.5);
+  margin: 2px;
+  width: 25px;
+  border-radius: 3px;
+}
+
+#hiddenlinks a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#hiddenlinks a:hover {
+  background-color: #f1f1f1;;
+  min-width: inherit;
+  border-radius: 3px;
+}
+
+#hiddenlinks {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 25vh;
+  z-index: 1;
+  background-image: linear-gradient(to right, rgba(255,210,0,0.4), rgba(200, 160, 0, 0.1) 11%, rgba(0,0,0,0) 35%, rgba(200, 160, 0, 0.1) 65%);
+  box-shadow: inset 0 0 75px rgba(255,210,0,0.3), inset 0 0 20px rgba(255,210,0,0.4), inset 0 0 30px rgba(220,120,0,0.8);
+  color: rgba(0,0,0,0.5);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#headerlinks:hover #hiddenlinks {
+  display: flex;
+  opacity: 0.9;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+/* style for the main in agenda.html */
+
+#agendamain {
+  width: 100%;
+  margin: 4em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#agendamain nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 30vh;
+  height: 60vh;
+  margin: 0 1.5em 0 1em;
+  position: fixed;
+}
+
+#buttonevent {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #c19a6b;
+  border-radius: 6px;
+  color: whitesmoke;
+  box-shadow: 1px 2px 3px gray;
+  width: 15vh;
+  height: 5vh;
+  transition: width 30ms, height 30ms;
+}
+
+#buttonevent:hover {
+  width: calc(15vh + 2px);
+  height: calc(5vh + 2px);
+}
+
+.year {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+.month {
+  border: 1px solid rgba(0,0,0,0.5);
+  padding: 0.5em;
+  font-size: 0.9em;
+  min-width: 2em;
+  min-height: 1em;
+  text-align: center;
+  transition: background-color 50ms;
+}
+
+.month:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+#agendasearch {
+  font-family: 'Sacramento', cursive;
+  font-size: 1.8em;
+  padding: 1px 7px;
+  max-width: 5em;
+}
+
+#agendamain table {
+  margin-left: 35vh;
+}
+
+#agendaselect {
+  margin-top: 20px;
+}
+
+#agendaselect, #agendaselect option {
+  font-family: 'Cormorant', serif;
+  font-size: 1.1em;
+}
+
+#agendaselect option {
+  font-weight: bold;
+}
+
+#agendaselect option[value="work"] {
+  color: var(--work);
+}
+
+#agendaselect option[value="personal"] {
+  color: var(--personal);
+}
+
+#agendaselect option[value="travel"] {
+  color: var(--travel);
+}
+
+#agendaselect option[value="study"] {
+  color: var(--study);
+}
+
+table {
+  flex-grow: 2;
+  counter-reset: datanum;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+
+.datanum::before {
+  counter-increment: datanum;
+  content: counter(datanum);
+  color:rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+caption {
+  font-size: 1.8em;
+  padding: 8px 0;
+  font-family: 'Cormorant', serif;
+}
+
+.weekday {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+td {
+  padding: 10px 5px;
+  border-bottom: 2px solid rgba(0,0,0,0.5);
+  border-right: 1px solid rgba(0,0,0,0.5);
+}
+
+.hour {
+  font-family: 'Cinzel', serif;
+  font-size: 0.7em;
+  text-align: justify;
+  min-width: 100px;
+  text-align: center;
+  
+}
+
+.task {
+  font-family: 'Sacramento', serif;
+  font-size: 1.8em;
+}
+
+.work a, .personal a, .travel a, .study a {
+  color: whitesmoke;
+}
+
+.task:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+td a:hover {
+  color: #1f1f1f;
+}
+
+.break {
+  background-color: #DDE0F0;
+  font-style: italic;
+}
+
+.work {
+  background-color: var(--work);
+}
+
+.personal {
+  background-color: var(--personal);
+}
+
+.travel {
+  background-color: var(--travel);
+}
+
+.study {
+  background-color: var(--study);
+}
+
+td:last-child {
+  border-right: none;
+}
+
+.merged {
+  display: none;
+}
+
+/* formulary configuration */
+
+#formmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12vh 0;
+}
+
+#agendaform {
+  height: 100%;
+  margin: 30px;
+  padding: 20px;
+  min-width: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5em;
+  font-family: 'Cormorant', serif;
+}
+
+.formquestion {
+  margin: 10px 0;
+  min-width: 70vh;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.formquestion input, .formquestion select {
+  padding-bottom: 6px;
+  font-family: 'Cormorant', serif;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 3px;
+  color: black;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+#repeatoptions {
+  display: grid;
+  grid-template-areas: "text checkbutton"
+                        "hiddenoptions hiddenoptions";
+  margin: 30px 0;
+}
+
+#repeatoptions input {
+  align-self: center;
+  border: 1px solid rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+#repeattext {
+  grid-area: text;
+  margin-right: 12px;
+}
+
+#yes {
+  grid-area: checkbutton;
+}
+
+#repeathidden {
+  grid-area: hiddenoptions;
+  display: none;
+  flex-direction: column;
+}
+
+input[type="radio"]:checked ~ #repeathidden {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#dayoptions {
+  padding: 20px 0;
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    ". . ."
+    ". . ."
+    ". . .";
+    justify-content: space-around;
+    align-content: flex-end;
+}
+
+#dayoptions p {
+  grid-area: title;
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* style for checkbox button */
+
+.checkoption {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.8em;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+/*hidding the default input button */
+
+.checkoption input {
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* styling the button (span tag) which goes on top */
+
+.checkbutton {
+  height: 15px;
+  width: 15px;
+  margin-right: 8px;
+  background-color: #eeeeee;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 3px;
+  cursor: grab;
+}
+
+/* If mouse hover, add a grey background color */
+
+.checkoption:hover input ~ .checkbutton {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.checkoption input:checked ~ .checkbutton {
+  background-color: #2196F3;
+}
+
+#weeknumber {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#weeknumber input {
+  margin-left: 8px;
+  padding-bottom: 6px;
+  width: 7vh;
+  font-family: 'Cormorant', serif;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 3px;
+  color: black;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* style for submit button */
+
+#buttonform {
+  font-family: 'Cinzel', serif;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+/* style for the footer */
+
+footer {
+  margin-left: 30vh;
+  width: 75%;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Cormorant', serif;
+  font-size: 1.5em;
+}
+
+#formfooter {
+  margin: 0;
+  width: 100%;
+}

@@ -1,0 +1,234 @@
+/* embeded fonts:
+font-family: 'Cabin Condensed', sans-serif;
+font-family: 'Piazzolla', serif; */
+
+
+/*general style configuration for the presentation page */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Piazzolla', serif;
+}
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color:orange;
+    border-radius: 5px;
+}
+
+/*the general style for the header and the footer */
+
+header, footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    background-color:rgba(255,191,0, 0.8);
+}
+
+/* the style for the header and its nav */
+
+#favheader {
+    position: fixed;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    background-color:rgba(210,170,109, 0.8);*/
+    color: rgb(128, 144, 194);
+    width: 100%;
+    z-index: 1;
+}
+#logohome {
+    width: 10vh;
+    margin-left: 15px;
+}
+
+#favheader nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 15px;
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+/*the style for the main first section */
+
+#favmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#favtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    position: relative;
+    overflow: auto;
+    height: 143.8vh;
+}
+#favtitleimg {
+    position: absolute;
+    width: 100%;
+    opacity: 0.5;
+}
+#favtitletext {
+    position: relative;
+    color: darkslateblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+}
+#favtitletext h1 {
+    font-size: 5vh;
+}
+#favtitletext h2 {
+    max-width: 40vh;
+    font-size: 6vh;
+    font-weight:normal;
+}
+
+h1 a {
+    transition: font-size 80ms;
+}
+
+h1 a:hover {
+    font-size: 6vh;
+}
+
+#gzmoving {
+    left: 50%;
+    top: 40%;
+}
+
+#n26moving {
+    left: 55%;
+    top: 40%;
+}
+
+#ciframoving {
+    left: 45%;
+    top: 40%;
+}
+
+.movingicon {
+    width: 10vh;
+    height: 10vh;
+    margin: 8px 0;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-animation: movingicons 10s linear infinite;
+       -moz-animation: movingicons 10s linear infinite;
+         -o-animation: movingicons 10s linear infinite;
+            animation: movingicons 10s linear infinite;
+    transition: border-radius 2s;
+}
+
+.movingicon:hover {
+    border-radius: 5px;
+}
+
+@-webkit-keyframes movingicons {
+    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-moz-keyframes movingicons {
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-o-keyframes movingicons {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes movingicons {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+/* common style for all appsections */
+
+.favsection {
+    padding: 30px 20px;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 3vh;
+    background-color: whitesmoke;
+    color: #483C32;
+    box-shadow: 0px 17px 33px -6px rgba(0,0,0,0.75);
+
+}
+
+.reversegrid {
+    direction: rtl;
+}
+
+.apptextbox {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.applogo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 50%;
+    justify-self: center;
+    margin: 20px 0;
+}
+
+.appbuttonbox {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a img {
+    width: 20vh;
+}
+
+/* style for the footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+    font-size: 3vh;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.imgicon {
+    width: 25px;
+    padding: 10px 10px;
+}

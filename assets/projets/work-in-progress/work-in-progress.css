@@ -1,0 +1,205 @@
+/* font-family: 'Indie Flower', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Great Vibes', cursive;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower';
+}
+
+body {
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#bgimg {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+header, footer {
+	position: relative;
+	padding: 15px;
+	width:97.5%;
+	color: whitesmoke;
+	font-size: 3vh;
+    text-decoration: none;
+	background-color: rgb(30,144,255);
+    border-bottom: 1px solid rgb(30,144,255);
+    box-shadow:1px 1px 2px rgb(30,144,255);
+	z-index: 1;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 79vh;
+}
+
+#stickynote {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-right: 30px;
+	flex-grow: 2;
+}
+
+#stickynote h1 {
+	padding-bottom: 20px;
+}
+
+code {
+	color: white;
+}
+#contact {
+	background-color: white;
+	opacity: 0.8;
+	width: 30%;
+	height: 80vh;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+aside {
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 8%;
+	padding: 0 10px;
+	height: 100vh;
+	position: absolute;
+	background-color: orange;
+	margin-right: 30px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+#followus {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#socialicons {
+    display: flex;
+    flex-direction: row;
+	align-items: flex-end;
+}
+
+.icons {
+    width: 3vh;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+article {
+    margin: 0;
+    padding: 0;
+}
+
+#yellowbox {
+    text-align: center;
+    padding: 10px 15px;
+    background-color: yellow;
+    opacity: 0.9;
+}
+
+#whitebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-around;
+    padding: 15px;
+    font-size: 3vh;
+    height: inherit;
+}
+
+article a {
+	color: rgb(30,144,255);
+}
+
+/* let's try to animate the box a little bit */
+@keyframes folding {
+    from {border-radius: 0 0 0 0;}
+    to {border-radius: 50px 0 30px 0;}
+}
+
+@keyframes hiddengrow {
+	from {width: 2%;}
+	to {width: 8%}
+}
+
+#yellowbox {
+    animation-name: folding;
+    animation-duration: 80ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+aside:hover {
+	visibility: initial;
+	animation-name: hiddengrow;
+	animation-duration: 1s;
+}
+
+h1, h2 {
+    font-family: 'Pacifico', serif;
+}
+
+h1 {
+	font-size: 8vh;
+}
+
+.element {
+    padding: 20px 0;
+    font-family: 'Indie Flower';
+}
+
+address {
+    background-color: yellow;
+    margin: 0 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#signature {
+    font-family: 'Great Vibes';
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 4px;
+}
+
+p a {
+    background-color: rgb(30,144,255);
+}

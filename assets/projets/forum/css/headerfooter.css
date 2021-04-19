@@ -1,0 +1,105 @@
+/*
+les configurations de style pour le header et footer
+font-family: 'Cutive Mono', monospace;
+font-family: 'Monoton', cursive;
+font-family: 'Yusei Magic', sans-serif;
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cutive Mono', monospace;
+}
+header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid darkgray;
+    box-shadow: 2px 0 0 whitesmoke;
+}
+
+#user
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginname
+{
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.rightsidenav
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /*justify-content: space-around;*/
+
+}
+
+.navbar a
+{
+    font-family: 'Yusei Magic', sans-serif;
+    transition: color 0.2s, background-color 0.2s;
+    padding: 7px 10px;
+    text-transform: uppercase;
+}
+
+.navbar a:hover
+{
+    background-color: #3895D3;
+    color: white;
+    text-decoration: none;
+}
+
+#icon
+{
+    font-family: 'Monoton', cursive;
+    color: #3895D3;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#icon:hover
+{
+    background-color: initial;
+    color: #3895D3;
+}
+
+#searchbar
+{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+#searchbar input
+{
+    margin: 10px 0;
+}
+
+
+/*FOOTER*/
+
+footer
+{
+    width: 100%;
+}

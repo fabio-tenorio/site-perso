@@ -1,0 +1,252 @@
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Alegreya', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#fbody {
+    /* une palette de couleurs qui vont bien ensemble */
+    --fecorange: #fa991c;
+    --fecblanc: #fbf3f2;
+    --fecbleuclaire: #1c768f;
+    --fecbleufonce: #032539;
+
+    /* couleurs pour le site sur le Maroc */
+
+    --marocbrown: #945818;
+    --marocbleu: #6ba7e7;
+    --marocjaune: #f0d498;
+    /* background-image:url("../voyages/images/desertsandbg.jpg"); */
+    background-size: cover;
+    font-family: 'Alegreya', serif;
+}
+
+#fheader {
+    padding: 20px 0;    
+    background-image:url("../voyages/images/desertbg.png");
+    background-size: 110%;
+    background-position: center;
+    height: 89vh;
+}
+
+#fheader h1{
+    --headerposition: 100px;
+    font-family: 'Abril Fatface', cursive;
+    color: var(--marocbrown);
+    text-shadow: 2px 0 3px #603516;
+    text-align: center;
+    font-size: 6em;
+    letter-spacing: 10px;
+    position: relative;
+    top: var(--headerposition);
+}
+
+#fheader h2 {
+    font-size: 3em;
+    color:var(--marocbleu);
+    text-align: center;
+    text-shadow: 1px 2px 3px #603516;
+    position: relative;
+    top: calc(var(--headerposition)+100px);
+}
+
+#fheaderul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    position: relative;
+    top: calc(var(--headerposition)+150px);
+}
+
+#fheaderul li {
+    font-size: 1.7em;
+    color: #201207;
+}
+
+#fmain {
+    top: 300px;
+    background-color: var(--marocjaune);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#fslideconteneur {
+    --taille: 700px;
+    width: var(--taille);
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+    padding: 30px 0;
+}
+
+#fslides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+  #fslides::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+#fslides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#fslides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: var(--taille);
+    height: var(--taille);
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+
+  .fslideimg {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+#fslideconteneur > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #945818;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+  }
+#fslideconteneur > a:active {
+    top: 1px;
+  }
+
+  #fslideconteneur > a:hover {
+      background: #502c12;
+  }
+  
+#fsection1 {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #40230e;
+    background-color: var(--marocjaune);
+}
+
+#fsection1 h2 {
+    padding: 30px;
+    font-size: 5em;
+    font-family: 'Abril Fatface', cursive;
+}
+
+#fsection1 img {
+    object-position: center;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+
+#fsection1 p {
+    font-family: 'Alegreya', serif;
+    font-size: 3em;
+    color: var(--marocbleu);
+    width: 70%;
+}
+
+#fsection1 a {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: var(--marocbleu);
+    color: whitesmoke;
+    font-size: 2.5em;
+    box-shadow: 1px 2px 3px #032539;
+}
+
+#fsection1 a:hover{
+    background-color: whitesmoke;
+    color: var(--marocbleu);
+    cursor: pointer;
+}
+
+.fsections {
+    background-color: whitesmoke;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    width: 100%;
+}
+
+.fsections img {
+    width: 500px;
+    height: 350px;
+    padding: 0 30px;
+    transition: box-shadow 0.2s;
+    box-shadow: none;
+}
+
+.fsections img:hover {
+    box-shadow: 0px 1px 30px var(--fecbleufonce);
+}
+
+.fsectionstexte {
+    max-width: 50%;
+    color: var(--marocbrown);
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.fsections-2 {
+    flex-direction: row-reverse;
+}
+
+.fsections a {
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px var(--fecbleufonce);
+    color: var(--fecorange);
+    background-color: var(--fecblanc);
+    font-size: 0.8em;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color, color, 0.5s;
+}
+
+.fsections a:hover {
+    background-color: var(--fecorange);
+    color: var(--fecblanc);
+}

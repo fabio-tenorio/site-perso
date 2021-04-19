@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <title>liste de naissance | La liste créee par les parents de Clonnie</title>
+        <link rel="stylesheet" href="liste.css">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Special+Elite&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <p class="logoname">Lefilsde</p>
+                <p class="logoname"><span class="logonamecontrast">Cl</span>yde&</p>
+                <p class="logoname">B<span class="logonamecontrast">onnie</span></p>
+            </div>
+            <nav id="headermenu">                
+                <a href="formulaire.html">ajouter un article</a>
+                <a href="#">contacter le site</a>
+                <a href="#">partager la liste</a>
+            </nav>
+            <form action="liste-naissance.html" id="searchbar">
+                <input type="search" id="searchlist" name="searchlist" placeholder="je cherche dans la liste...">
+                <button type="button"><img src="images/lupelogo.png" alt="lupe icon"></button>
+            </form>
+            <div id="panier">
+                <img src="images/panier.png" alt="icone d'un panier">
+                <p>panier</p>
+            </div>
+        </header>
+        <main>
+            <h1>Clonnie arrive bientôt</h1>
+            <h2>Voici la liste des choses qu'on n'a pas eu l'occasion <span>de voler</span> d'acheter encore</h2>
+            <table>
+                <tr>
+                    <th colspan="6">déco chambre</th>
+                </tr>
+                <tr>
+                    <td><img src="images/banquette.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Banquette enfant</td>
+                    <td class="itemdesc">Pour les rares moments de détente après l'aventure</td>
+                    <td class="itemvalue">89,31<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="banquette" name="banquette"><label for="banquette">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.laredoute.fr/ppdp/prod-508016952.aspx?dim1=1000&dim2=1000&cod=PSN00080628FR&gclsrc=aw.ds&kard=1&gclid=CjwKCAjwiOv7BRBREiwAXHbv3Pcw6UjL_Fxc7i1K3EHJeM8U0JJmA97wQfcgG8GXRAK-jVu-A8lL3BoCmcAQAvD_BwE" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/tapis.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Tapis enfant</td>
+                    <td class="itemdesc">Le tapis enfant motif bateaux Galet.</td>
+                    <td class="itemvalue">55,99<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="tapis" name="tapis"><label for="tapis">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.laredoute.fr/ppdp/prod-521523380.aspx?dim1=1000&dim2=1000&cod=PSN00080628FR&gclsrc=aw.ds&kard=1&gclid=CjwKCAjwiOv7BRBREiwAXHbv3DPAVTEYiUa7uLQ2dFK8eGMa9i_DFH_pTIO945nIJouhClZFzCltURoCsH8QAvD_BwE" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td class="urgent"><img src="images/lit.jpg" alt="image de l'article"></td>
+                    <td class="itemname urgentname">Lit enfant<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemdesc urgentname">Même si l'on craint de n'avoir pas assez d'occasions de l'utiliser, une chambre sans lit n'est pas une vraie chambre<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemvalue">295,99<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="lit" name="lit"><label for="lit">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.laredoute.fr/ppdp/prod-500812177.aspx?dim1=1000&dim2=1000&cod=PSN00094579FR&gclsrc=aw.ds&kard=1&gclid=CjwKCAjwiOv7BRBREiwAXHbv3If9QZc-lBQs4z-V9lXfkhqO6-A261M02RsTxeEIO6WD6hD53KvrEhoCu9IQAvD_BwE" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr class="bought">
+                    <td><img src="images/renard.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Renard mobile</td>
+                    <td class="itemdesc">Oui, c'est cher, mais c'est tellement mignon!</td>
+                    <td class="itemvalue">62,19<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="renard" name="renard"><label for="renard">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.etsy.com/fr/listing/684799717/renard-mobile-woodland-mobile-woodland?gpla=1&gao=1&&utm_source=google&utm_medium=cpc&utm_campaign=shopping_fr_fr_fr_christmas_Home+and+Living&utm_custom1=d4d57d8c-92a8-4247-94eb-c1e5abf38cab&utm_content=go_1713506805_66562354786_333163193932_pla-303628061699_c__684799717frfr&utm_custom2=1713506805" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/mapamundi.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Tapisserie carte du monde</td>
+                    <td class="itemdesc">On ne sait jamais jusqu'où l'on peut arriver</td>
+                    <td class="itemvalue">10,00<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="mapamundi" name="mapamundi"><label for="mapamundi">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.wish.com/product/5e86da47601519478f34624c?hide_login_modal=true&from_ad=goog_shopping&_display_country_code=FR&_force_currency_code=EUR&pid=googleadwords_int&c=%7BcampaignId%7D&ad_cid=5e86da47601519478f34624c&ad_cc=FR&ad_lang=FR&ad_curr=EUR&ad_price=10.00&campaign_id=8143443324&gclid=CjwKCAjwiOv7BRBREiwAXHbv3JxZpYkcr9m7F0BtOZgI58Ab8rhTyPLUhQQmnWKn30pR1PPr3AIQbBoCYgoQAvD_BwE&share=web" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <th colspan="6">éveil</th>
+                </tr>
+                <tr>
+                    <td class="urgent"><img src="images/pistoletbulles.jpeg" alt="image de l'article"></td>
+                    <td class="itemname urgentname">Pistolet à balles de savon<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemdesc urgentname">Il faut commencer l'entraînement dès que possible!<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemvalue">4,00<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="pistoletbulles" name="pistoletbulles"><label for="pistoletbulles">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.wish.com/product/5d42d6252832052a7d06c5c7?hide_login_modal=true&from_ad=goog_shopping&_display_country_code=FR&_force_currency_code=EUR&pid=googleadwords_int&c=%7BcampaignId%7D&ad_cid=5d42d6252832052a7d06c5c7&ad_cc=FR&ad_lang=FR&ad_curr=EUR&ad_price=4.00&campaign_id=8143443324&gclid=CjwKCAjwiOv7BRBREiwAXHbv3OzoFXZ4VVEwjMei3EJN7Tvl6vBOgHEJkv7ZWcBRoMkTH0FkXidCnhoCguEQAvD_BwE&share=web" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr class="bought">
+                    <td><img src="images/tapiseveil.png" alt="image de l'article"></td>
+                    <td class="itemname">Tapis d'éveil T'es fou Louloup</td>
+                    <td class="itemdesc">Bébé peut s’allonger sur ce doux tapis en fausse fourrure sans avoir peur.</td>
+                    <td class="itemvalue">20,00<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="tapiseveil" name="tapiseveil"><label for="tapiseveil">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.je-suis-papa.com/tapis-eveil-tes-fou-louloup/" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td class="urgent"><img src="images/telephone.jpg" alt="image de l'article"></td>
+                    <td class="itemname urgentname">Téléphone à tirer<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemdesc urgentname">Pour appeler tout le monde, sauf la police<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemvalue">24,99<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="telephone" name="telephone"><label for="telephone">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.oxybul.com/jouets-d-eveil/jouet-a-tirer-a-pousser/telephone-a-tirer-vintage/produit/330564" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr class="bought">
+                    <td><img src="images/setplage.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Set plage 5 pièces</td>
+                    <td class="itemdesc">Ça peut être utile à la prison</td>
+                    <td class="itemvalue">12,95<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="setplage" name="setplage"><label for="setplage">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.internet-toys.com/fr/250351-hape-set-plage-5-pieces/?gclid=CjwKCAjwiOv7BRBREiwAXHbv3MQyjwqwaaeNk8aFBqER6za-curdXmTwo-waxCgkeLyTaZiYIsvALRoCH_0QAvD_BwE#" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/zebre.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Lot de 3 jeux d'éveil</td>
+                    <td class="itemdesc">coffret composé d'un boulier zèbre à roulettes, d'une boite à formes cylindrique et d'une tour à empiler</td>
+                    <td class="itemvalue">24,99<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="zebre" name="zebre"><label for="zebre">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.vertbaudet.fr/lot-de-3-jeux-d-eveil-multicolore.htm?ProductId=620030468&FiltreCouleur=6361&FiltreTaille=TU&track=ref_payant&cmpid=SEM0450&kenshoo_ida=AdsNotTagged&gclid=CjwKCAjwiOv7BRBREiwAXHbv3NZNNXtoi6pvQvdKGIMUmOF-2oBcIs6wtgS3vvRym4QV1groUYoEShoCZkQQAvD_BwE" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <th colspan="6">Repas</th>
+                </tr>
+                <tr class="bought">
+                    <td><img src="images/vaisselle.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Coffret vaisselle en bambou</td>
+                    <td class="itemdesc">le coffret Monsieur Ours moutarde de Liewood est un ensemble de vaisselle aux dimensions adaptées aux petites mains.</td>
+                    <td class="itemvalue">27,00<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="vaisselle" name="vaisselle"><label for="vaisselle">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.lilinappy.fr/coffret-vaisselle-en-bambou-bebe-liewood-mr-ours-moutarde.html?gclid=CjwKCAjwiOv7BRBREiwAXHbv3LzGDGsmZmIMMxWdBtsUf7OdRlWGrqzGVHhlbsDPPfYiLju-9Uze9RoCPdYQAvD_BwE" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/sactherm.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Freesiom Sac Isotherme Repas Enfant</td>
+                    <td class="itemdesc">Portable et leger, avec une fermeture plus robuste et durable qui permettent un accès intérieur facile.</td>
+                    <td class="itemvalue">27,00<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="sactherm" name="sactherm"><label for="sactherm">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.amazon.fr/Freesiom-Isotherme-D%C3%A9jeuner-Portable-Pique-Nique/dp/B07SNHDHD6" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/gourde.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Froy and Dind Gourde</td>
+                    <td class="itemdesc">Cette gourde au design rétro de froy & dind prennent jeunes enfants avec dans le jardin d'enfants ou à l'école.</td>
+                    <td class="itemvalue">11,00<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="gourde" name="gourde"><label for="gourde">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.amazon.fr/Froy-Gourde-r%C3%A9tro-vintage-Bambi/dp/B017Z1TAR0/ref=sr_1_2?dchild=1&keywords=bambi%7Cpanpan&qid=1601897563&refinements=p_n_availability%3A215253031&s=baby&sr=1-2">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/gobelet.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Gobelets Bamby</td>
+                    <td class="itemdesc">Des gobelets sympas pour faire la fête de temps en temps</td>
+                    <td class="itemvalue">12,61<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="gobelet" name="gobelet"><label for="gobelet">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.amazon.fr/8990500-Home-Gobelet-Bambi-Disney/dp/B00ABDLWNU/ref=sr_1_5?dchild=1&keywords=bambi%7Cpanpan&qid=1601897563&refinements=p_n_availability%3A215253031&s=baby&sr=1-5">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td class="urgent"><img src="images/chaise.jpg" alt="image de l'article"></td>
+                    <td class="itemname urgentname">Chaise haute bébé<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemdesc urgentname">chaise haute transformable de couleur vernis naturel de la collection Marcel de la marque Combelle.<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemvalue">229,00<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="chaise" name="chaise"><label for="chaise">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.madeinbebe.com/boutique/fr/chaise-haute-marcel-transformable-barreaux-vernis-naturel-combelle/a201147?utm_source=google_merchants_fr&gclid=CjwKCAjwiOv7BRBREiwAXHbv3HBPks9Fa2ubG0XAZ2h-qMEgna-f6t18PIyDsxm0lc6wvJYMQL2RxhoCfpkQAvD_BwE">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <th colspan="6">Bain/Hygiène</th>
+                </tr>
+                <tr class="bought">
+                    <td><img src="images/troussetoilette.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Trousse de toilette et de soin</td>
+                    <td class="itemdesc">Retrouvez dans cette adorable trousse de toilette tout le nécessaire pour prendre soin de bébé.</td>
+                    <td class="itemvalue">27,99<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="troussetoilette" name="troussetoilette"><label for="troussetoilette">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.vertbaudet.fr/trousse-de-toilette-et-de-soin-gris.htm?ProductId=703400148&FiltreCouleur=6429&FiltreTaille=TU&track=ref_payant&cmpid=SEM0296&kenshoo_ida=Pu%C3%A9riculture&gclid=CjwKCAjwiOv7BRBREiwAXHbv3KUPPOULGHOj2xVN12fxeUez3faaxyGI9ETc49whV959QR5-qClAQhoC2loQAvD_BwE">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr class="bought">
+                    <td><img src="images/savon.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Coffret cadeau savon</td>
+                    <td class="itemdesc">Superbe coffret cadeau zéro déchet rouge de la marque Lamazana comprenant des produits 100% recyclables et végane !</td>
+                    <td class="itemvalue">35,00<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="savon" name="savon"><label for="savon">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.lilinappy.fr/coffret-cadeau-zero-dechet-rouge-lamazuna.html?gclid=CjwKCAjwiOv7BRBREiwAXHbv3IpDAQ7cYpYcWpOhBOBrTAxRmZYGuO9gr5kxEgDHv0aMox6my8B07RoChEcQAvD_BwE">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr class="bought">
+                    <td><img src="images/capbain.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Coffret cape de bain + gant Renard</td>
+                    <td class="itemdesc">Une sortie de bain toute en douceur grâce à cette jolie cape de bain et son gant de toilette assorti</td>
+                    <td class="itemvalue">19,99<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="capbain" name="capbain"><label for="capbain">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.vertbaudet.fr/coffret-cape-de-bain-gant-renard-terre-cuite.htm?ProductId=704040068&FiltreCouleur=6610&FiltreTaille=80X80&track=ref_payant&cmpid=SEM0443&kenshoo_ida=Home+B%C3%A9b%C3%A9&gclid=CjwKCAjwiOv7BRBREiwAXHbv3JwIVP8lPrAESilL7a58BmyLIBFy1tkZE8etCfv6wYOkDLuygnMJ-hoCFL4QAvD_BwE">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr class="bought">
+                    <td><img src="images/peignoir.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Peignoir de bain enfant à capuche</td>
+                    <td class="itemdesc">Ce peignoir tout doux réchauffera notre bambin à la sortie de sa douche ou de son bain.</td>
+                    <td class="itemvalue">23,99<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="peignoir" name="peignoir"><label for="peignoir">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.vertbaudet.fr/coffret-cape-de-bain-gant-renard-terre-cuite.htm?ProductId=704040068&FiltreCouleur=6610&FiltreTaille=80X80&track=ref_payant&cmpid=SEM0443&kenshoo_ida=Home+B%C3%A9b%C3%A9&gclid=CjwKCAjwiOv7BRBREiwAXHbv3JwIVP8lPrAESilL7a58BmyLIBFy1tkZE8etCfv6wYOkDLuygnMJ-hoCFL4QAvD_BwE">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/creme.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Mustela Panier Cadeau Bébé Bleu</td>
+                    <td class="itemdesc">Ce panier Mustela® contient tous les produits essentiels pour les jeunes parents et leur bébé</td>
+                    <td class="itemvalue">36,95<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="creme" name="creme"><label for="creme">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.doctipharma.fr/fr/mustela-panier-cadeau-bebe-bleu/p-10128">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <th colspan="6">Sortie</th>
+                </tr>
+                <tr class="bought">
+                    <td><img src="images/porteurbebe.jpg" alt="image de l'article"></td>
+                    <td class="itemname">Porteur bebé voiture</td>
+                    <td class="itemdesc">Celui-là c'est urgent, car la famille se déplace souvent à cause du boulot!</td>
+                    <td class="itemvalue">89,90<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="porteurbebe" name="porteur-bebe"><label for="porteurbebe">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.allobebe.fr/porteur-bebe-voiture-vintage-noir-aVC082011213.html?gclid=CjwKCAjwiOv7BRBREiwAXHbv3FJ_sc18WxWer_sgsrmnNTa_j3I6nA8Q0rRmPUu5GJJgARNtUQ_BKRoCS3cQAvD_BwE" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td class="urgent"><img src="images/randonnée.jpg" alt="image de l'article"></td>
+                    <td class="itemname urgentname">Sac à dos porte-bébé<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemdesc urgentname">Très utile lorsqu'on a besoin de s'échapper<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemvalue">120,00<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="randonnée" name="randonnée"><label for="randonnée">selectionné</label></td>
+                    <td class="itemlink"><a href="https://boutique.voyagesetenfants.com/sac-a-dos-porte-bebe/488-porte-b%C3%A9b%C3%A9-randonn%C3%A9e-ranger-little-life.html" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td class="urgent"><img src="images/sacvoyage.jpg" alt="image de l'article"></td>
+                    <td class="itemname urgentname">Sac de voyage polyvalent<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemdesc urgentname">Sac à Couches Convertible pour bébé 4 en 1 Lit de bébé Pliable, Station à Langer Portable-Gris<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemvalue">33,24<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="sacvoyage" name="sacvoyage"><label for="sacvoyage">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.cdiscount.com/pret-a-porter/bebe-puericulture/sac-de-voyage-polyvalent-pour-bebe-sac-a-couches-c/f-11317350105-auc2008291980238.html?idOffre=639577379&awc=6948_1601900083_ecef8c16098b670512f9e63f6810e6c4&cid=affil&cm_mmc=zanoxpb-_-286443" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td class="urgent"><img src="images/poussette.jpg" alt="image de l'article"></td>
+                    <td class="itemname urgentname"> Poussette Bébé Argent<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemdesc urgentname">Cadeau pour enfants conçu avec amour pour le détail, fabriqué en des matériaux de haute qualité.<br/><span>ceci c'est urgent!</span></td>
+                    <td class="itemvalue">51,90<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="poussette" name="poussette"><label for="poussette">selectionné</label></td>
+                    <td class="itemlink"><a href="https://www.amazon.fr/fish-Enfants-Cadeau-Bapt%C3%AAme-Poussette/dp/B01HNZWX2M" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/body.jpg" alt="image de l'article"></td>
+                    <td class="itemname">body bébé</td>
+                    <td>Le cadeau parfait pour nouveau copain de chasse de papa.</td>
+                    <td>13,28<span>&#x20AC;</span></td>
+                    <td class="itemcheck">je l'ajoute à mon panier<input type="checkbox" id="body" name="body"><label for="body">selectionné</label></td>
+                    <td><a href="https://www.etsy.com/fr/listing/539488748/analyse-promenade-chasse-chasse-body" target="blank">je l'achete directement en ligne</a></td>
+                </tr>
+            </table>
+            <section id="linksection">
+                <h3>Pas très satisfait(e) avec cette liste ?</h3>
+                <a class="linkbutton button1" href="formulaire.html">j'ajoute un article à la liste</a>
+                <a class="linkbutton button2" href="https://www.youtube.com/" target="blank">j'enregistre un petit vidéo</a>
+             </section>
+        </main>
+        <footer>
+            <article>
+                <h3>La liste de naissance</h3>
+                <p>Cette liste de naissance n'est qu'un exercice, une occasion de plus pour pratiquer le html et le css.
+                    Cependant, rien n'empêche de l'utiliser, une fois qu'il soit achevé, comme point de départ pour d'autres projets</p>                
+            </article>
+            <article>
+                <h3>À propos</h3>
+                <ul>
+                    <li><a href="#">Contactez-nous</a></li>
+                    <li><a href="#">Qui sommes-nous?</a></li>
+                    <li><a href="#">Blog de la Liste de Naissance</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Besoin d'aide?</h3>
+                <ul>
+                    <li><a href="#">Vidéos explicatives</a></li>
+                    <li><a href="#">Comment ça marche</a></li>
+                    <li><a href="#">F.A.Q.</a></li>
+                </ul>
+            </article>
+        </footer>
+    </body>
+</html>

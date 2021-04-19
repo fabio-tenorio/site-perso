@@ -1,0 +1,1023 @@
+/*
+l'ensemble des configurations de style
+font-family: 'Cutive Mono', monospace;
+font-family: 'Monoton', cursive;
+font-family: 'Yusei Magic', sans-serif;
+font-family: 'Dosis', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* PAGE INDEX */
+
+#indexsection1 {
+    text-align: center;
+    padding: 10vh 40vh;
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+#indexsection1 h1 {
+    font-size: 10em;
+    font-family: 'Monoton', cursive;
+    color: white;
+    padding-top: 10vh;
+}
+
+#indexsection1 h2 {
+    color: white;
+    font-family: 'Yusei Magic', sans-serif;
+    padding-bottom: 10vh;
+}
+
+#indexsection1 p {
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    font-family: 'Dosis', sans-serif;
+}
+
+#indexsection2 {
+    padding: 15vh 10vh;
+    width: 100%;
+    /*background-color: #f2f2f2;*/
+    background-image: url("../images/agora.jpg");
+    background-size: cover;
+}
+
+#textsection2 {
+    padding: 5vh 0;
+}
+
+#textsection2 h2 {
+    font-weight: bold;
+    font-size: 4em;
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
+}
+
+#textsection2 p {
+    font-size: 2em;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+/*INSCRIPTION */
+
+.main_inscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 900px;
+    text-align: center;
+    /* background-color:  #283445; */
+    background-image: url('../images/agora1.jpeg');
+    background-size: cover;
+}
+
+
+/* formulaire d'inscription */
+
+.formulaire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    height: 750px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    animation: encadre 3s;
+}
+
+.formulaire h1 {
+    color: #283445;
+    padding: 0 10px;
+    font-size: 1.9em;
+    margin-bottom: 20px;
+}
+
+
+/* topic.php */
+
+#maintopic {
+    padding: 15vh 10vh;
+    background-image: url("../images/pompei.jpg");
+    background-size: cover;
+}
+
+#tabletopic {
+    -webkit-box-shadow: 3px 9px 15px 5px #000000;
+    box-shadow: 3px 9px 15px 5px #000000;
+    border: 1px solid black;
+    /* border-radius: 20px; */
+}
+
+.tableindex {
+    margin: 0 10vh;
+    font-size: 0.8em;
+}
+
+.topicsbox {
+    padding: 10px;
+    font-family: 'Dosis', sans-serif;
+    background-color: rgba(220, 220, 220, 0.8);
+}
+
+.topicsbox h3 {
+    /* background-color: gray; */
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#topicsitem {
+    display: flex;
+    flex-direction: column;
+}
+
+#topictitre {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 1.1em;
+}
+
+#tabletopic {
+    background-color: whitesmoke;
+}
+
+.th_topic {
+    text-align: left;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 15px;
+    border-bottom: 1px solid black;
+    /* border-radius: 20px; */
+}
+
+.td_topic {
+    /* margin: 10px 20px; */
+    padding: 20px;
+    /* border-bottom: 1px solid black; */
+}
+
+.spanlisttopic {
+    font-style: italic;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.tr_topic,
+.td_topic {
+    font-size: 1.3em;
+    font-family: 'Dosis', sans-serif;
+    border-bottom: 1px solid gray;
+}
+
+.td_topic h3 {
+    font-weight: bold;
+}
+
+.td_footeritem {
+    font-style: italic;
+    list-style: none;
+    font-size: 0.8em;
+}
+
+#newtopic {
+    margin: 10vh 0;
+    padding: 8vh;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+}
+
+#newtopic h3 {
+    text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 15px;
+    /* background-color: gray; */
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+#newtopic form {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.formtopic {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    max-width: 150vh;
+}
+
+.formtopicradio {
+    padding: 5vh 0;
+}
+
+.topic_check {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 15vh;
+}
+
+
+/* Message ok */
+
+.message_ok {
+    color: #283445;
+    font-size: 1.1em;
+    line-height: 1.9em;
+}
+
+.message_ok a {
+    background-color: #283445;
+    border-radius: 8px;
+    padding: 10px 5px;
+    color: white;
+}
+
+.message_ok a:hover {
+    background-color: #334258;
+}
+
+
+/* LABEL ET INPUT (pour toutes les pages) */
+
+label {
+    font-size: 1.2em;
+}
+
+input {
+    margin-bottom: 15px;
+    width: 250px;
+    height: 25px;
+}
+
+
+/* BOUTON SUBMIT (pour toutes les pages) */
+
+.bouton input {
+    color: white;
+    background-color: #334258;
+    transition: background-color 0.6s;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.bouton input:hover {
+    background-color: #283445;
+    transition: background-color 0.6s;
+}
+
+
+/* MESSAGE OK */
+
+.message_ok {
+    color: #283445;
+    font-size: 1.1em;
+    line-height: 2.5em;
+}
+
+.message_ok a {
+    background-color: #283445;
+    border-radius: 8px;
+    padding: 10px 5px;
+    color: white;
+}
+
+.message_ok a:hover {
+    background-color: #334258;
+}
+
+
+/* ERREUR  */
+
+.erreur p {
+    color: red;
+    font-size: 1.1em;
+    margin: 10px;
+}
+
+.erreur h2 {
+    color: #1b771f;
+    margin: 20px;
+}
+
+
+/*CONNEXION */
+
+.main_connexion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    background-color: #283445;
+}
+
+
+/* Formulaire connexion */
+
+.bg-img {
+    background-image: url("../images/connexion.jpg");
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.connexion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    height: 320px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    animation: encadre 3s;
+}
+
+.connexion h1 {
+    color: #283445;
+    font-size: 1.9em;
+    margin-bottom: 20px;
+}
+
+.formarea {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+
+/*PROFIL */
+
+.main_profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 870px;
+    text-align: center;
+    background-color: #283445;
+    background-image: url('../images/pompei2.jpg');
+    background-size: cover;
+}
+
+
+/* Formulaire profil */
+
+.profil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 30px 0;
+    animation: encadre 3s;
+    padding: 10px;
+}
+
+.profil h1 {
+    color: #283445;
+    font-size: 1.9em;
+    padding: 30px 0;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+
+/* CONVERSATION */
+
+.main_conversation {
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1_titre_topic {
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 1.8em;
+    margin: 25px 0;
+    border: 1.5px solid rgb(228, 226, 226);
+}
+
+.container_entete_conversations {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 0;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+    background-color: #007bff;
+}
+
+.container a:hover {
+    text-decoration: none;
+}
+
+.container_conversations {
+    border: 1px solid black;
+    border-top: none;
+    background-color: white;
+    transition: all 0.6s;
+}
+
+.container_conversations p {
+    font-size: 1.2em;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.container_conversations i {
+    font-size: 0.8em;
+}
+
+.container_conversations:hover {
+    background-color: rgb(230, 230, 230);
+    transition: all 0.6s;
+}
+
+.span_login_conversations {
+    color: #db131d;
+}
+
+.span_login_conversations a {
+    font-size: 1em;
+}
+
+.span_depuis_conversation {
+    font-size: 0.8em;
+    margin: 0;
+    display: block;
+    margin-top: -4px;
+    margin-bottom: 6px;
+}
+
+.statistique_conversations svg {
+    margin-right: -4px;
+}
+
+.dernier_message_conversations {
+    margin-top: 6px;
+}
+
+.liste_topic_conversation {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.liste_topic_conversation a {
+    text-decoration: none;
+    background-color: rgb(43, 42, 42);
+    padding: 6px 10px;
+    color: white;
+    margin-top: 40px;
+    border-radius: 12px;
+    transition: all 0.6s;
+}
+
+.liste_topic_conversation a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: rgb(43, 42, 42);
+    transition: all 0.6s;
+    border: 1px solid rgb(43, 42, 42);
+}
+
+.ajouter_conversation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.formulaire_conversation {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulaire_conversation input {
+    width: 400px;
+}
+
+.formulaire_conversation textarea {
+    width: 400px;
+}
+
+
+/* MESSAGES */
+
+.titre_messages {
+    margin-top: 25px;
+    border: 1.5px solid rgb(228, 226, 226);
+}
+
+.main_messages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+}
+
+.titre_messages {
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 1.8em;
+}
+
+.commentaires_article {
+    width: 550px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 12px;
+    border: 1.5px solid rgb(228, 226, 226);
+}
+
+.commentaires_article span {
+    padding: 4px 9px;
+}
+
+.commentaires_article img {
+    height: 15px;
+}
+
+.identite_messages span {
+    font-size: 1.2em;
+    color: #dc3545;
+    padding-bottom: 0;
+}
+
+.identite_messages p {
+    font-size: 0.8em;
+    color: grey;
+    margin: 0;
+    line-height: 0.6em;
+    padding-left: 9px;
+}
+
+.message_messages {
+    background-color: rgb(243, 243, 243);
+    align-items: center;
+    padding: 10px 9px;
+    margin-top: 10px;
+    border-top: 1px solid rgb(228, 226, 226);
+    border-bottom: 1px solid rgb(228, 226, 226);
+    word-wrap: break-word;
+}
+
+.message_messages p {
+    margin-bottom: 0;
+}
+
+.message_valide_supprimer {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.affichage_messages {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 9px;
+}
+
+.affichage_messages svg {
+    margin-right: 0px;
+}
+
+.affichage_doigts_messages {
+    width: 160px;
+}
+
+.affichage_doigts_messages span {
+    margin-left: -9px;
+    margin-right: 5px;
+}
+
+.affichage_commentaires_messages {
+    width: 160px;
+    display: flex;
+    justify-content: end;
+    margin-right: -7px;
+}
+
+.affichage_commentaires_messages button {
+    border: none;
+    background-color: white;
+    transition: all 0.6;
+    padding: 2px 3px 2px 3px;
+    transition: all 0.6s;
+}
+
+.affichage_commentaires_messages button:hover {
+    background-color: rgb(228, 226, 226);
+    border-radius: 2px;
+    transition: all 0.6s;
+}
+
+.actions_messages {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 9px;
+    border-top: 1px solid rgb(228, 226, 226);
+}
+
+.pouces_increment_messages {
+    display: flex;
+    width: 120px;
+    justify-content: center;
+}
+
+.supprimer_message_centre button,
+.supprimer_message_droite button {
+    border: none;
+    padding: 2px 5px 2px 4px;
+    border-radius: 2px;
+    background-color: white;
+    transition: all 0.6s;
+}
+
+.supprimer_message_droite button {
+    margin-right: 15px;
+}
+
+.supprimer_message_centre svg,
+.supprimer_message_droite svg {
+    margin-right: -2px;
+}
+
+.supprimer_message_centre button:hover,
+.supprimer_message_droite button:hover {
+    background-color: rgb(228, 226, 226);
+    transition: all 0.6s;
+}
+
+.commenter_action_messages button {
+    border: none;
+    background-color: white;
+    padding: 2px 8px;
+    border-radius: 2px;
+    transition: all 0.6s;
+}
+
+.commenter_action_messages button:hover {
+    background-color: rgb(228, 226, 226);
+    transition: all 0.6s;
+}
+
+.pouce_like_novalidate button {
+    border: 1px solid rgb(228, 226, 226);
+    border-radius: 12px;
+    background-color: white;
+    padding: 1px 5px;
+    transition: all 0.6s;
+}
+
+.pouce_like_novalidate button:hover {
+    border-radius: 12px;
+    background-color: #007bff;
+    padding: 1px 5px;
+    border: 1px solid #007bff;
+    color: white;
+    overflow: hidden;
+    transition: all 0.6s;
+}
+
+.pouce_dislike_novalidate button {
+    border: 1px solid rgb(228, 226, 226);
+    border-radius: 12px;
+    background-color: white;
+    padding: 1px 5px;
+    transition: all 0.6s;
+}
+
+.pouce_dislike_novalidate button:hover {
+    border-radius: 12px;
+    background-color: #dc3545;
+    padding: 1px 5px;
+    border: 1px solid #dc3545;
+    color: white;
+    overflow: hidden;
+    transition: all 0.6;
+}
+
+.pouce_like_validate button {
+    border-radius: 12px;
+    background-color: #007bff;
+    padding: 1px 5px;
+    border: 1px solid #007bff;
+    color: white;
+    overflow: hidden;
+}
+
+.pouce_dislike_validate button {
+    border-radius: 12px;
+    background-color: #dc3545;
+    padding: 1px 5px;
+    border: 1px solid #dc3545;
+    color: white;
+    overflow: hidden;
+}
+
+.affiche_commentaires_messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden_messages {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden_messages button {
+    background-color: white;
+    border: none;
+    padding: 7px 10px;
+}
+
+.hidden_messages button:hover {
+    background-color: rgb(228, 226, 226);
+    border-radius: 25px;
+}
+
+.com_messages {
+    background-color: rgb(241, 238, 238);
+    margin: 20px 17px;
+    padding: 1px 10px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    word-wrap: break-word;
+}
+
+.com_messages span {
+    color: #dc3545;
+    font-size: 1 em;
+}
+
+.com_messages_i {
+    font-size: 0.7em;
+}
+
+.creer_commentaire_messages {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.creer_commentaire_messages input {
+    width: 400px;
+}
+
+.creer_commentaire_messages textarea {
+    width: 400px;
+    height: 100px;
+}
+
+.formulaire_messages {
+    width: 400px;
+}
+
+.formulaire_messages input {
+    width: 400px;
+}
+
+.formulaire_messages textarea {
+    width: 400px;
+}
+
+
+/* Pagination */
+
+.pagination_messages {
+    font-size: 1.1em;
+    margin: 12px 0;
+    color: #db131d;
+}
+
+.pagination_messages a {
+    color: black;
+    padding: 5px;
+}
+
+.liste_conversations_messages {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.liste_conversations_messages a {
+    text-decoration: none;
+    background-color: rgb(43, 42, 42);
+    padding: 9px 14px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 12px;
+    transition: all 0.6s;
+}
+
+.liste_conversations_messages a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: rgb(43, 42, 42);
+    transition: all 0.6s;
+    border: 1px solid rgb(43, 42, 42);
+}
+
+.supprimer_conversation button,
+.supprimer_topic button {
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 12px;
+    border: none;
+    transition: all 0.6s;
+}
+
+.supprimer_conversation {
+    margin-bottom: 40px;
+}
+
+.supprimer_conversation svg,
+.supprimer_topic svg {
+    margin-right: -4px;
+}
+
+.supprimer_conversation button:hover,
+.supprimer_topic button:hover {
+    background-color: rgb(255, 38, 30);
+    transition: all 0.6s;
+}
+
+.supprimer_topic {
+    margin-top: 40px;
+}
+
+#main_result {
+    background-color: lightblue;
+    padding: 5vh 0;
+}
+
+#main_result h1 {
+    font-family: 'Yusei Magic', sans-serif;
+    padding-bottom: 10px;
+    min-height: 20vh;
+}
+
+#ul_result {
+    background-color: whitesmoke;
+    padding: 35px;
+}
+
+.li_result {
+    padding: 5px;
+    font-style: italic;
+    list-style: none;
+    border-bottom: 1px solid gray;
+    font-size: 1.2em;
+    max-width: 100vh;
+    overflow: hidden;
+}
+
+
+/* MEMBRES - LISTES - LISTE CONVERSATION$ */
+
+
+/* PAGE membres (données globales de l'ensemble des membre */
+
+.membrestitre {
+    color: black;
+    background-color: #007bff;
+}
+
+.testmembre {
+    background-color: white;
+    border: 5px black;
+    padding: 5%;
+}
+
+.membresadmin {
+    width: 450px;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.form-check {
+    width: 15vh;
+}
+
+.testmembre h2 {
+    color: #53C1FC;
+    text-align: center;
+    font-style: oblique;
+}
+
+.membres {
+    border: 1px solid blue;
+}
+
+.membres th,
+tr,
+td {
+    border: 1px solid blue;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* PAGE listes des conversations d'un membre, afin de supprimer ses conversations */
+
+.mainconversation {
+    background-color: white;
+    padding: 5%;
+}
+
+.mainconversation h2 {
+    color: #53C1FC;
+    text-align: center;
+    font-style: oblique;
+}
+
+.listesmembres2 {
+    width: 20px;
+    overflow: scroll;
+}
+
+
+/* PAGE listes des messages d'un membre, afin de supprimer ses messages */
+
+.mainliste {
+    background-color: white;
+    padding: 5%;
+}
+
+.listemembre h2 {
+    color: #53C1FC;
+    text-align: center;
+    font-style: oblique;
+}

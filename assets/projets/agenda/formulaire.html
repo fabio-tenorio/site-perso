@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>agenda | La Plateforme_</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="the formulary for my own agenda">
+        <meta name="keywords" content="exercise, HTML, CSS">
+        <meta name="author" content="fabio-tenorio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="agenda.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Cormorant:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    </head>
+    <body>
+		<header>
+            <a href="agenda.html"><img id="headerlogo" src="images/tibetlogo.png" alt="tibet logo"></a>
+            <a id="titlelink" href="agenda.html"><h1 class="tapping">living in the present</h1></a>
+            <div id="headerlinks">
+                <div id="littlebars">
+                    <a class="headerbar"></a>
+                    <a class="headerbar"></a>
+                    <a class="headerbar"></a>
+                </div>
+                <div id="hiddenlinks">
+                   <a href="formulaire.html">create a new event</a>
+                   <a href="#">about this agenda</a>
+                   <a href="#">how to use it</a>
+                   <a href="#">ask for help</a>
+                </div>
+            </div>
+        </header>
+		<main id="formmain">
+            <h2>Something new to put in your agenda?</h2>
+			<form id="agendaform" action="agenda.html">
+                <div class="formquestion">
+                    <label for="eventname">what is it?<br/></label>
+                    <input type="text" name="eventname" id="eventname" placeholder="the event's description">
+                </div>
+                <div class="formquestion">
+					<label>which category it belongs to?<br/></label>
+					<select name="events" id="events">
+						<option value="event">-- chose here --</option>
+						<option value="work">work</option>
+						<option value="personal">personal</option>
+						<option value="travel">travel</option>
+						<option value="study">study</option>
+					</select>
+                </div>
+                <div class="formquestion">
+                    <label for="eventdate">when it takes place?<br/></label>
+                    <input type="date" name="eventdate" id="eventdate">
+                </div>
+                <div class="formquestion">
+                    <label for="eventhour">which hour?<br/></label>
+                    <input type="time" name="eventhour" id="eventhour">
+                </div>
+                <div id="repeatoptions">
+                    <p id="repeattext">Click here if you whish to repeat it</p>
+                    <input type="radio" id="yes" name="eventrepeat" value="yes">
+                    <div id="repeathidden">
+                        <div id="dayoptions">
+                            <p>choose the day(s) for the repetitions</p>
+                            <label class="checkoption" for="day1">
+                                <input type="checkbox" id="day1" name="day1" value="Sunday">
+                                Sunday <span class="checkbutton"></span>
+                            </label>
+                            <label class="checkoption" for="day2">
+                                <input type="checkbox" id="day2" name="day2" value="Monday">
+                                Monday <span class="checkbutton"></span>
+                            </label>
+                            <label class="checkoption" for="day3">
+                                <input type="checkbox" id="day3" name="day3" value="Tuersday">
+                                Tuersday <span class="checkbutton"></span>
+                            </label>
+                            <label class="checkoption" for="day4">
+                                <input type="checkbox" id="day4" name="day4" value="Wednesday">
+                                Wednesday <span class="checkbutton"></span>
+                            </label>
+                            <label class="checkoption" for="day5">
+                                <input type="checkbox" id="day5" name="day5" value="Thursday">
+                                Thursday <span class="checkbutton"></span>
+                            </label>
+                            <label class="checkoption" for="day6">
+                                <input type="checkbox" id="day6" name="day6" value="Friday">
+                                Friday<span class="checkbutton"></span>
+                            </label>
+                            <label class="checkoption" for="day7">
+                                <input type="checkbox" id="day7" name="day7" value="Saturday">
+                                Saturday<span class="checkbutton"></span>
+                            </label>
+                            <label class="checkoption" for="day8">
+                                <input type="checkbox" id="day8" name="day8" value="weekend">
+                                weekend<span class="checkbutton"></span>
+                            </label>
+                            <label class="checkoption" for="day9">
+                                <input type="checkbox" id="day9" name="day9" value="everyday">
+                                every day<span class="checkbutton"></span>
+                            </label>
+                        </div>
+                        <div id="weeknumber">
+                            <label for="eventnumber">how many weeks does it will repeat?</label>
+                            <input type="number" min="1" name="eventnumber" id="eventnumber">
+                        </div>
+                    </div>
+                </div>
+                <button id="buttonform" type="submit">create new event</button>
+   
+            </form>
+            
+		</main>
+		
+		<footer id="formfooter">
+            <a href="formulaire.html">create a new event</a>
+            <a href="#">about this agenda</a>
+            <a href="#">how to use it</a>
+            <a href="#">ask for help</a>
+        </footer>
+    </body>
+</html>

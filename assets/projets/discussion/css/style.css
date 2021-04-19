@@ -1,0 +1,243 @@
+/*
+police pour les titres:
+font-family: 'Noticia Text', serif; 
+police pour les textes:
+font-family: 'Space Mono', monospace; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    background-image: url("../images/bush.png");
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* the header */
+
+header {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+header h1 {
+    font-size: 6em;
+    font-family: 'Noticia Text', serif;
+    padding-top: 60px;
+}
+
+header img {
+    margin: 2vh 0;
+}
+
+header h2 {
+    font-size: 2em;
+    color: orange;
+}
+
+#indexmain {
+    padding: 10vh 5vh; 
+}
+
+#indexmain section p {
+    font-size: 1.3em;
+}
+
+#indexmain section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+    line-height: 6vh;
+}
+
+#section1 {
+    background-color: rgba(252, 226, 5, 0.4);
+}
+
+#section2 {
+    background-color: rgba(58, 153, 68, 0.4);
+}
+
+#section3 {
+    background-color: rgba(255, 253, 208, 0.4);
+}
+
+#profilcoin {
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#profilcoin img {
+    width: 11vh;
+    height: 11vh;
+
+}
+
+.color1 {
+    color: green;
+}
+
+.color2 {
+    color: violet;
+}
+
+.color3 {
+    color: orange;
+}
+
+.color4 {
+    color: blue;
+}
+
+header nav {
+    padding: 1vh 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: whitesmoke;
+}
+
+header nav a {
+    font-size: 1.4em;
+}
+
+/* inscription */
+
+.formulairesmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 0;
+}
+
+.formulairesmain h2 {
+    font-size: 3em;
+}
+
+.formulairesmain form {
+    background-color: lightcyan;
+    box-shadow: 2px 3px 4px gray;
+    padding: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.formulairesmain form div {
+    margin: 3vh 0;
+}
+
+#deco {
+    font-size: 0.9em;
+}
+
+#login {
+    font-weight: bold;
+}
+
+/* discussion.php */
+
+#maindiscussion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 10vh 0 0 0;
+}
+
+.emp {
+    font-weight: bold;
+    color: black;
+}
+
+#msgconnected {
+    background-color: rgba(58, 153, 68, 0.5);
+    padding: 3vh;
+    width: 120vh;
+    height: 10vh;
+    overflow: scroll;
+    margin-right: 60vh;
+    font-size: 1.2em;
+}
+
+#msgothers {
+    background-color: rgba(252, 226, 5, 0.8);
+    padding: 3vh;
+    width: 120vh;
+    height: 10vh;
+    overflow: scroll;
+    /* margin-right: 4vh; */
+    font-size: 1.2em;
+}
+
+#messagebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 10vh 0;
+    background-color: rgba(255, 253, 208, 0.5);
+    width: 100%;
+}
+
+#messagebox textarea {
+    background-color: rgba(58, 153, 68, 0.5);
+    padding: 3vh;
+    width: 120vh;
+    height: 10vh;
+    margin-right: 10vh;
+    font-size: 1.1em;
+}
+
+/* footer */
+
+footer {
+    background-color: darkblue;
+    padding: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footerliens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#footerliens a {
+    padding: 1vh 0;
+    font-size: 1.3em;
+}
+
+.imgicon {
+    width: 5vh;
+    height: 5vh;
+}

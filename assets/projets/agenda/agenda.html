@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>agenda | La Plateforme_</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="my own agenda or calendar">
+        <meta name="keywords" content="exercise, HTML, CSS">
+        <meta name="author" content="fabio-tenorio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="agenda.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Cormorant:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="agenda.html"><img id="headerlogo" src="images/tibetlogo.png" alt="tibet logo"></a>
+            <a id="titlelink" href="agenda.html"><h1 class="tapping">living in the present</h1></a>
+            <div id="headerlinks">
+                <div id="littlebars">
+                    <a class="headerbar"></a>
+                    <a class="headerbar"></a>
+                    <a class="headerbar"></a>
+                </div>
+                <div id="hiddenlinks">
+                   <a href="formulaire.html">create a new event</a>
+                   <a href="#">about this agenda</a>
+                   <a href="#">how to use it</a>
+                   <a href="#">ask for help</a>
+                </div>
+            </div>
+        </header>
+        <main id="agendamain">
+            <nav>
+                <a id="buttonevent" href="formulaire.html">new event</a>
+                <div class="year">
+                    <div class="month">Jan</div>
+                    <div class="month">Feb</div>
+                    <div class="month">Mar</div>
+                    <div class="month">Apr</div>
+                    <div class="month">May</div>
+                    <div class="month">Jun</div>
+                    <div class="month">Jul</div>
+                    <div class="month">Aug</div>
+                    <div class="month">Sep</div>
+                    <div class="month">Oct</div>
+                    <div class="month">Nov</div>
+                    <div class="month">Dec</div>
+                </div>
+                <input id="agendasearch" type="text" placeholder="search an event...">
+				<div>
+					<label>Sort by type of event</label>
+					<select id="agendaselect" name="events">
+						<option value="event">-- chose here --</option>
+						<option value="work">work</option>
+						<option value="personal">personal</option>
+						<option value="travel">travel</option>
+						<option value="study">study</option>
+					</select>
+				</div>
+            </nav>
+            <table>
+                <caption>November - week 1</caption>
+                <thead>
+                    <tr>
+                        <td class="hour"></td>
+                        <td class="weekday">Sunday<p class="datanum"></p></td>
+                        <td class="weekday">Monday<p class="datanum"></p></td>
+                        <td class="weekday">Tuesday<p class="datanum"></p></td>
+                        <td class="weekday">Wednesday<p class="datanum"></p></td>
+                        <td class="weekday">Thursday<p class="datanum"></p></td>
+                        <td class="weekday">Friday<p class="datanum"></p></td>
+                        <td class="weekday">Saturday<p class="datanum"></p></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="taskline">
+                        <td class="hour">6 to 8am</td>
+                        <td class="task"><a></a></td>
+                        <td colspan="5" class="task personal"><a>meditation</a></td>
+                        <!-- <td class="task merged"><a>task</a></td>
+                        <td class="task merged"><a>task</a></td>
+                        <td class="task merged"><a>task</a></td>
+                        <td class="task merged"><a>task</a></td> -->
+                        <td class="task"><a></a></td>
+                    </tr>
+                    <tr class="taskline">
+                        <td class="hour">8 to 10am</td>
+                        <td rowspan="2" class="task personal"><a>tracking</a></td>
+                        <td class="task work"><a>work meeting</a></td>
+                        <td rowspan="2" class="task work"><a>prepare for conference</a></td>
+                        <td class="task work"><a>write essay</a></td>
+                        <td class="task work"><a>conference</a></td>
+                        <td class="task work"><a>work meeting</a></td>
+                        <td rowspan="3" class="task personal"><a>play with my daughter</a></td>
+                    </tr>
+                    <tr class="taskline">
+                        <td class="hour">10 to noon</td>
+                        <td class="task"><a></a></td>
+                        <!-- <td class="task merged"><a>task</a></td> -->
+                        <td class="task"><a></a></td>
+                        <td class="task"><a></a></td>
+                        <!-- <td class="task merged"><a></a></td> -->
+                        <td class="task study"><a>study C++</a></td>
+                        <!-- <td class="task merged"><a>task</a></td> -->
+                    </tr>
+                    <tr class="taskline">
+                        <td class="hour">noon to 14pm</td>
+                        <td class="task personal"><a>lunch with family</a></td>
+                        <td colspan="5" class="task"><a>pause</a></td>
+                        <!-- <td class="task break merged"><a>pause</a></td> -->
+                        <!-- <td class="task break merged"><a>pause</a></td> -->
+                        <!-- <td class="task break merged"><a>pause</a></td> -->
+                        <!-- <td class="task break merged"><a>pause</a></td> -->
+                        <!-- <td class="task break merged"><a>pause</a></td> -->
+                    </tr>
+                    <tr class="taskline">
+                        <td class="hour">14 to 16pm</td>
+                        <td rowspan="2" class="task personal"><a>the great nap</a></td>
+                        <td class="task"><a></a></td>
+                        <td class="task travel"><a>buy train tickets</a></td>
+                        <td class="task work"><a>write essay</a></td>
+                        <td rowspan="3" class="task travel"><a>travel to Bordeaux</a></td>
+                        <td rowspan="2" class="task study"><a>study Philosophy</a></td>
+                        <td rowspan="4" class="task travel"><a>organize travel to Tibet</a></td>
+                    </tr>
+                    <tr class="taskline">
+                        <td class="hour">16 to 18pm</td>
+                        <!-- <td class="task merged"><a>task</a></td> -->
+                        <td colspan="3" class="task work"><a>prepare for conference</a></td>
+                        <!-- <td class="task merged"><a>task</a></td> -->
+                        <!-- <td class="task merged"><a>task</a></td> -->
+                        <!-- <td class="task merged"><a>task</a></td> -->
+                        <!-- <td class="task merged"><a>task</a></td> -->
+                        <!-- <td class="task merged"><a>task</a></td> -->
+                    </tr>
+                    <tr class="taskline">
+                        <td class="hour">18 to 20pm</td>
+                        <td class="task"><a></a></td>
+                        <td rowspan="2" class="task study"><a>study</a></td>
+                        <td class="task"><a></a></td>
+                        <td rowspan="2" class="task study"><a>study</a></td>
+                        <!-- <td class="task merged"><a>task</a></td> -->
+                        <td class="task work"><a>planning the next week</a></td>
+                        <!-- <td class="task merged"><a>task</a></td> -->
+                    </tr>
+                    <tr class="taskline">
+                        <td class="hour">20 to 22pm</td>
+                        <td rowspan="2" class="task personal"><a>cooking for the week</a></td>
+                        <!-- <td class="task merged"><a>study</a></td> -->
+                        <td class="task personal"><a>diner and relax</a></td>
+                        <!-- <td class="task merged"><a>study</a></td> -->
+                        <td class="task personal"><a>diner and relax</a></td>
+                        <td class="task"><a></a></td>
+                        <!-- <td class="task merged"><a>task</a></td> -->
+                    </tr>
+                    <tr class="taskline">
+                        <td class="hour">22 to midnight</td>
+                        <!-- <td class="task personal merged"><a>cooking for the week</a></td> -->
+                        <td class="task"><a></a></td>
+                        <td class="task"><a></a></td>
+                        <td class="task personal"><a>cinema</a></td>
+                        <td class="task"><a></a></td>
+                        <td class="task personal"><a>reading and film section</a></td>
+                        <td class="task"><a></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <a href="formulaire.html">create a new event</a>
+            <a href="#">about this agenda</a>
+            <a href="#">how to use it</a>
+            <a href="#">ask for help</a>
+        </footer>
+    </body>
+</html>

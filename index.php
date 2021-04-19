@@ -14,7 +14,7 @@
 <body>
     <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" id="moilogo" href="#">FT</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -62,14 +62,13 @@
             <a download="" href="assets/moncv.pdf" id="cv" class="btn btn-warning col-sm-6 m-auto btn-lg">télécharger mon <em>curriculum vitae</em></a>
         </section>
         <section id="moi" class="about section">
-            <!-- <span class="section-subtitle">My intro</span> -->
             <h2 class="section-title section-about-me">Qui suis-je?</h2>
             <div class="about__container bd-grid">
                 <div class="about__data">
                     <p class="about__description">
-                        J'ai exercé passionnement, pendant 15 ans, le métier d'enseignant et de chercheur au Brésil,
+                        Pendant 15 ans, j'ai exercé avec enthousiasme le métier d'enseignant et de chercheur au Brésil,
                         mon pays d'origine. En France depuis septembre 2019, j'ai décidé de rélier deux anciennes passions
-                        - l'éducation et l'informatique - afin de faire convergir mes compétences vers un nouveau objectif
+                        - l'éducation et l'informatique - afin de faire converger mes compétences vers un nouveau objectif
                         professionnel: contribuer aux avancées technologiques dans le secteur des EdTech's.
                     </p>
                 </div>
@@ -78,7 +77,6 @@
                         <h3 class="about__information-title">Profil</h3>
                         <div class="about__information-data">
                             <img id="moi2" src="assets/images/moi2.jpg" alt="Fabio Tenorio de Carvalho">
-                            <!-- <i class="bi bi-person about__information-icon"></i> -->
                             <span>Fabio Tenorio</span>
                         </div>
                         <div class="about__information-data">
@@ -116,7 +114,6 @@
             </div>
         </section>
         <section class="skills section" id="competences">
-            <!-- <span class="section-subtitle">Why choose me</span> -->
             <article id="hardskills">
                 <h2 class="section-title py-2">Mes hard skills</h2>
                 <div class="container">
@@ -156,7 +153,6 @@
             </article>
             <article id="softskills">
             <h2 class="section-title py-5">Mes <em>soft skills</em></h2>
-            <!-- <div class="skills__container bd-grid"> -->
                 <div class="skills__content container">
                     <div class="softskills_row">
                         <div class="movingicon">
@@ -184,7 +180,6 @@
             </article>
         </section>
         <section class="education section">
-            <!-- <span class="section-subtitle">Qualification</span> -->
             <h2 class="section-title">Ma formation</h2>
             <div class="education__container bd-grid">
                 <div class="education__content">
@@ -257,119 +252,69 @@
 
             </div>
         </section>
-        <section class="services section" id="services">
-            <!-- <span class="section-subtitle">What I Offer</span> -->
-            <h2 class="section-title">What I do</h2>
-
-            <div class="services__container bd-grid">
-                <div class="services__content">
-                    <i class="bi bi-terminal services__icon"></i>
-                    <h3 class="services__title">Websites</h3>
-                    <p class="services__description">I can produce from scratch well referenced statical and dynamical web sites, from landing pages to fully functional and secure e-commerce applications</p>
+        <section class="works section" id="portfolio">
+        <h2 class="section-title">Mes projets</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 my-3 works__img">
+                    <img class="works__prt" src="assets/images/livre-or.png" alt="">
+                    <div class="works__data">
+                        <a target="blank" href="assets/projets/livre-or/index.php" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <span class="works__title">Un livre d'or dédié à Spinoza</span>
+                        <p>l'un de mes premiers projets en PHP</p>
+                    </div>
                 </div>
-
-                <div class="services__content">
-                    <i class="bi bi-easel services__icon"></i>
-                    <h3 class="services__title">Courses and Workshops</h3>
-                    <p class="services__description">I'm also available to giving introductory or in-depth courses and workshops on logic, algorithmical reasoning, and programming</p>
+                <div class="col-sm-6 my-3 works__img">
+                    <img class="works__prt" src="assets/images/app-favorites.png" alt="">
+                    <div class="works__data">
+                        <a target="blank" href="assets/projets/app-favorites/app-favorites.html" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <span class="works__title">mes applications favorites</span>
+                        <p>histoire de pratiquer un peu du CSS</p>
+                    </div>
                 </div>
-
-                <div class="services__content">
-                    <i class="services__icon bi bi-pen"></i>
-                    <h3 class="services__title">Content writing</h3>
-                    <p class="services__description">As a journalist and philosopher, I'm able to write articles about logic, philosophy, and the history of human knowledge (either in english, in french, in portuguese, or in italian).</p>
+                <div class="col-sm-6 my-3 works__img">
+                    <img class="works__prt" src="assets/images/voyages.png" alt="">
+                    <div class="works__data">
+                        <a target="blank" href="assets/projets/voyages/voyages.html" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <span class="works__title">un site de voyages</span>
+                        <p>en collaboration avec Claude Rodrigues et Evan Azemard</p>
+                    </div>
                 </div>
-
-            </div>
-        </section>
-        <section class="project section">
-            <div class="project__container bd-grid">
-                <div class="project__data">
-                    <h2 class="section-title project__title">Some EdTech project in mind?</h2>
-                    <p class="project__description">As a experienced teacher, researcher, and web developer, I could collaborate to make it happen.</p>
-                    <a href="#contact" class="button button__light">contact me</a>
+                <div class="col-sm-6 my-3 works__img">
+                    <img class="works__prt" src="assets/images/discussion.png" alt="">
+                    <div class="works__data">
+                        <a target="blank" href="assets/projets/discussion/index.php" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <span class="works__title">un espace de discussion</span>
+                        <p>projet réalisé en PHP, MySQL, HTML et CSS</p>
+                    </div>
                 </div>
-                <img src="assets/images/fabio.jpg" alt="" class="project__img">
-            </div>
-        </section>
-    <section class="works section" id="portfolio">
-    <span class="section-subtitle">Mon portfolio</span>
-    <h2 class="section-title">Mes projets</h2>
-
-    <div class="works__container bd-grid">
-        <div class="works__img">
-            <!-- <img src="assets/images/amalfitana.jpg" alt=""> -->
-            <div class="works__data">
-                <a href="#" class="works__link"><i class="bi bi-link-45deg"></i></a>
-                <span class="works__title">work 1</span>
-            </div>
-        </div>
-
-        <div class="works__img">
-            <!-- <img src="assets/images/amalfitana.jpg" alt=""> -->
-            <div class="works__data">
-                <a href="#" class="works__link"><i class="bi bi-link-45deg"></i></a>
-                <span class="works__title">work 1</span>
-            </div>
-        </div>
-
-        <div class="works__img">
-            <!-- <img src="assets/images/amalfitana.jpg" alt=""> -->
-            <div class="works__data">
-                <a href="#" class="works__link"><i class="bi bi-link-45deg"></i></a>
-                <span class="works__title">work 1</span>
-            </div>
-        </div>
-    </div>
-    </section>
-    <section class="contact section" id="contact">
-        <span class="section-subtitle">Contact me</span>
-        <h2 class="section-title">Get in touch</h2>
-
-        <div class="contact__container bd-grid">
-            <form action="" class="contact__form">
-                <div class="contact__inputs">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
+                <div class="col-sm-6 my-3 works__img">
+                    <img class="works__prt" src="assets/images/forum.png" alt="">
+                    <div class="works__data">
+                        <a target="blank" href="assets/projets/work-in-progress/work-in-progress.html" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <span class="works__title">un forum sur l'informatique</span>
+                        <p>en collaboration avec Emmanuel Cabassot et Olivier Puche</p>
+                    </div>
                 </div>
-
-                <input type="text" placeholder="Project" class="contact__input">
-
-                <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
-
-                <input type="submit" value="Send Message" class="button contact__button">
-
-            </form>
-
-            <div>
-                <div class="contact__info">
-                    <h3 class="contact__subtitle">Call me</h3>
-                    <span class="contact__text">+33 6 68 61 30 31</span>
-                    <span class="contact__text">+33 6 68 61 30 31</span>
-                </div>
-
-                <div class="contact__info">
-                    <h3 class="contact__subtitle">E-mail</h3>
-                    <span class="contact__text">fabiovalho@gmail.com</span>
-                    <span class="contact__text">fabiovalho@hotmail.com</span>
-                </div>
-
-                <div class="contact__info">
-                    <h3 class="contact__subtitle">Location</h3>
-                    <span class="contact__text">2 rue Ferrari</span>
-                    <span class="contact__text">Marseille, France</span>
+                <div class="col-sm-6 my-3 works__img">
+                    <img class="works__prt" src="assets/images/boutique.png" alt="">
+                    <div class="works__data">
+                        <a target="blank" href="assets/projets/work-in-progress/work-in-progress.html" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <span class="works__title">une boutique en ligne</span>
+                        <p>en collaboration avec Olivier Puche</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    </main>
+</main>
 <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
     <div class="container p-4">
         <!-- Section: Text -->
       <section class="mb-4">
         <p>
-          You can find me also in the social media
+          Vous me trouverez égalément sur les réseaux sociaux
         </p>
       </section>
       <!-- Section: Text -->
@@ -380,34 +325,15 @@
                 <i class="bi bi-facebook"></i></a>
             <a href="#" class="btn btn-outline-light btn-floating m-1 footer__link" role="button">
                 <i class="bi bi-instagram"></i></a>
-            <a href="#" class="btn btn-outline-light btn-floating m-1 footer__link" rol3="button">
+            <a href="#" class="btn btn-outline-light btn-floating m-1 footer__link" role="button">
                 <i class="bi bi-twitter"></i></a>
         </div>
       </section>
-      <!-- Section: Social media -->
-        </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2021 Copyright:
       <a class="text-white" href="#">Fabio Tenorio de Carvalho</a>
     </div>
-    <!-- Copyright -->
   </footer>
-  <!-- Footer -->
-    <!-- <footer class="footer section">
-        <div class="footer__container bd-grid">
-            <h1 class="footer__title">Fabio</h1>
-            <p class="footer__description">I'm Fabio Tenorio and this is my personal website, consult me</p>
-            <div class="footer__social">
-                <a href="#" class="footer__link"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="footer__link"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="footer__link"><i class="bi bi-twitter"></i></a>
-            </div>
-        </div>
-        <p class="footer__copy">All rigths reserved by Bedimcode</p>
-    </footer> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

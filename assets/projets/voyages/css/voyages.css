@@ -1,0 +1,631 @@
+/* font-family: 'Prata', serif; */
+
+/* le body et le main de la page d'accueil */
+
+
+
+body {
+    /* une palette de couleurs qui vont bien ensemble */
+    --fecorange: #fa991c;
+    --fecblanc: #fbf3f2;
+    --fecbleuclaire: #1c768f;
+    --fecbleufonce: #032539;
+}
+
+#fecbody, #fecmain {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Prata', serif;
+}
+
+#fecimgbg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+/* le header de la page d'accueil, son style, ses animations */
+
+#fecheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    opacity: .9;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    color: var(--fecorange);
+}
+
+#fecheader h1 {
+    font-size: 10vh;
+    position: relative;
+    top: 100px;
+}
+
+.feccitation {
+    color: #010101;
+    text-align: center;
+    letter-spacing: 0.1em;
+    --typingduration: 4.5s;
+    position: relative;
+    top: 170px;
+}
+
+.fecimgicon {
+    width: 4vh;
+    height: 4vh;
+}
+
+.tapping {
+    font-style: italic;
+    overflow: hidden; /* pour cacher les mots avants qu'elles soient "tappés" */
+    border-right: 0.15em solid orange; /* Le courseur orange de la machine à écrire  */
+    white-space: nowrap; /* Tout reste sur la même ligne */
+    margin: 0 auto; /* Pour donner l'effet déroulant aux mots */
+    animation: tape var(--typingduration) steps(40, end), clignote .75s step-end infinite;
+  }
+  
+  /* L'effet tapper les lettres */
+
+  @keyframes tape {
+    from { width: 0}
+    to { width: 100%;}
+  }
+  
+  /* l'effet clignoter */
+
+  @keyframes clignote {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .fadding {
+      opacity: 0;
+      animation: fade 2s;
+      animation-delay: var(--typingduration);
+      animation-fill-mode: forwards;
+  }
+
+  @keyframes fade {
+      from {opacity: 0}
+      to {opacity: 1}
+  }
+
+/* la barre de navigation en dessous du header */
+
+#fecnavbar {
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+
+/* le champ de recherche */
+
+#fecsearchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    --searchheight: 150px;
+    height: var(--searchheight);
+    padding: 0 30px;
+}
+
+#fecsearchbar input {
+    min-width: 40vh;
+    padding: 10px 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: inset 2px 2px 3px #032539;
+}
+
+#fecsearchbar input::placeholder {
+    color: #010101;
+    letter-spacing: 1px;
+    font-family: 'Prata', serif;
+}
+
+#fecsearchbar img {
+    height: calc(var(--searchheight) - 75%);
+    animation: rotatesailor .5s infinite;
+}
+
+@keyframes rotatesailor {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+
+/* les liens sur le navbar */
+
+#fecmenucenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-grow: 1;
+    color: #cc7722;
+}
+
+#fecmenucenter a {
+    position: relative;
+    padding: 3px;
+}
+
+#fecmenucenter a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--fecorange);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+#fecmenucenter a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* le menu caché */
+
+#feclistbar {
+    position: absolute;
+    left: 10vh;
+    top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px var(--fecbleufonce);
+    z-index: 1;
+    font-family: 'Prata', serif;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#feclistbar:hover {
+    box-shadow: none;
+}
+
+#littlebars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerbar {
+    width: 30px;
+    height: 4px;
+    background-color: var(--fecorange);
+    margin: 2px 0;
+    border-radius: 5px;
+}
+
+#hiddenlist li {
+    list-style: none;
+    padding: 5px 0 5px 5px;
+    color: var(--fecbleufonce);
+    width: inherit;
+}
+
+#hiddenlist li a {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#hiddenlist li:hover {
+    background-color: var(--fecbleuclaire);
+    border-radius: 0;
+    color: var(--fecbleufonce);
+    box-shadow: 1px 2px 3px var(--fecbleufonce);
+}
+
+#hiddenlist {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 13px 0;
+    left: 3vh;
+    width: 40vh;
+}
+
+#hiddenlist ul {
+    width: 100%;
+}
+
+#feclistbar:hover #hiddenlist {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+#feclistbar:hover #chiddenlist {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    flex-wrap: wrap;
+    color: black;
+}
+
+#feclistbar:hover #littlebars {
+    display: none;
+}
+
+.fecsubmenulink {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fechiddensubmenu {
+    display: none;
+    position: absolute;
+    max-width: 30vh;
+    left: 30vh;
+    z-index: 1;
+    background-color: #f1f1f1;
+    box-shadow: 1px 2px 3px var(--fecbleufonce);
+    align-items: flex-start;
+}
+
+.fecsubmenulink:hover .fechiddensubmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.fechiddensubmenucenter {
+    display: none;
+}
+
+.fecsubmenucenterlink:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fechiddensubmenucenter li {
+    list-style: none;
+    margin: 5px 0 5px 6px;
+    min-width: 20vh;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.fechiddensubmenucenter li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--fecbleufonce);
+    box-shadow: inset 1px 2px 3px var(--fecbleufonce);
+}
+
+.fecsubmenucenterlink:hover .fechiddensubmenucenter {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    max-width: 30vh;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 3px var(--fecbleufonce);
+}
+
+
+/* le aside bar en fixed position à droite de l'écran */
+
+#fecsocialicons {
+    align-self: flex-end;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#fecsocialicons a {
+    background-color: burlywood;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 4px 5px 6px var(--fecbleufonce); 
+    padding: 5px 30px 5px 10px;
+    transition: padding-right .2s;
+}
+
+#fecsocialicons a:hover {
+    padding-right: 40px;
+}
+
+/* styles pour la fecsetion1 */
+
+#fecsection1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75vh;
+    padding: 50px 0;
+    background: linear-gradient(180deg, rgba(7,10,10,1) 0%, rgba(53,151,198,1) 0%, rgba(51,44,34,1) 90%);
+    width: 100%;
+}
+
+#fecsection1 h2 {
+    font-size: 3em;
+    color: var(--fecorange);
+}
+
+#fecsection1 h3 {
+    font-size: 1.8em;
+    color: var(--fecorange);
+}
+
+#fecworld a:hover #fecafrica {
+    fill: #2f6e41;
+}
+#fecworld a:hover #feceurasia {
+    fill: #3f6faa;
+}
+
+#fecworld a:hover #fecamerica {
+    fill: #b22234;
+}
+
+/* style pour la section 2 */
+
+#fecsection2 {
+    background-color: var(--fecbleuclaire);
+    padding: 5vh 10vh;
+    display: grid;
+    grid-template-areas: "title title title"
+                        "subtitle subtitle subtitle"
+                        "1fr 1fr 1fr";
+}
+
+#fecsection2 h2 {
+    grid-area: title;
+}
+
+#fecsection2 h3 {
+    grid-area: subtitle;
+    
+}
+
+#fecsection2 h2, #fecsection2 h3 {
+    text-align: center;
+    font-size: 1.6em;
+    color: var(--fecblanc);
+}
+
+.fecmembre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+    background-color: var(--fecorange);
+    margin: 0 5vh;
+    border-radius: 2px;
+    box-shadow: 1px 2px 3px var(--fecbleufonce); 
+}
+
+.fecmembreimg {
+    width: 20vh;
+    max-height: 25vh;
+    border-radius: 4px;
+}
+
+.fecmembretext h4, .fecmembretext h5 {
+    text-align: center;
+    font-weight: bold;
+    color: var(--fecbleufonce);
+    padding: 5px 0;
+}
+
+/* style pour la section3 (calendrier) */
+
+#fecsection3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../voyages/images/altoparaiso.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 10vh 0;
+}
+
+#fecsection3 h2 {
+    font-size: 2.5em;
+    color: var(--fecorange);
+}
+
+#fec_calendrier {
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+}
+
+#fec_calendrier thead th {
+    padding: 3vh 0;
+}
+
+#fec_calendrier thead th select {
+    border: 1px solid var(--fecorange);
+    padding: 9px;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    font-family: 'Prata', serif;
+}
+
+#fec_calendrier td {
+    padding: 10vh;
+    border-bottom: 1px solid var(--fecbleuclaire);
+    border-right: 1px solid var(--fecbleuclaire);
+    color: var(--fecbleufonce);
+}
+
+#fec_calendrier td:last-child {
+    border-right: none;
+}
+
+/* style pour la section 4 */
+
+#fecsection4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 0;
+    background-color: var(--fecorange);
+    color: var(--fecbleufonce);
+}
+
+#fecformsection4 {
+    margin-top: 5vh;
+    background-image: url("../voyages/images/belempara.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 5px solid #f1f1f1;
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+}
+
+#fecformsection4 form {
+    backdrop-filter: blur(9px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 0;
+    width: 70%;
+    font-size: 1.6em;
+}
+
+#fecformsection4 form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    font-size: 0.6em;
+    padding: 2vh;
+}
+
+#fecformsection4 form fieldset input {
+    width: 40vh;
+    padding: 10px 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: inset 2px 2px 3px #032539;
+}
+
+#fecformsection4 form fieldset input::placeholder {
+    font-family: 'Prata', sans-serif;
+    text-align: center;
+}
+
+#fecformsection4 form fieldset input[type="date"] {
+    width: 25vh;
+}
+
+#fecformsection4 form fieldset input[type="time"] {
+    width: 25vh;
+}
+
+.cfooter {
+    width: 100%;
+}
+.cfooter a {
+    color: white;
+    text-decoration: none;
+}
+.cfoot1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    
+}
+#cfoot1a a {
+     display: flex;
+    font-size: 4vh;
+    height: 2em;
+}
+#cfoot1b a {
+    display: flex;
+   font-size: 4vh;
+   height: 4em;
+}
+#cfoot1c a {
+    display: flex;
+   font-size: 4vh;
+   height: 6em;
+}
+#cfoot1d a {
+    display: flex;
+   font-size: 4vh;
+   height: 4em;
+}
+#cfoot1e a {
+    display: flex;
+   font-size: 4vh;
+   height: 2em;
+}
+.cmonde{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#cmonde2  {
+    animation-duration: 4s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+ }
+ @keyframes clignoter {
+   0%   { opacity:1; }
+   40%   {opacity:0; }
+   100% { opacity:1; }
+ }

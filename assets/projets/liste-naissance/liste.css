@@ -1,0 +1,336 @@
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Special Elite', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* general font and background features */
+
+header, footer {
+    font-family: 'Alfa Slab One', serif;
+    color: #FF2400;
+    background-color: #FFCC00;
+    align-self: stretch;
+}
+
+main {
+    font-family: 'Special Elite', serif;
+    color:#010101;
+    background-color: #FFFF66;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* body configuration */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header configuration */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.logoname {
+    font-size: 3vh;
+}
+
+.logonamecontrast {
+    color: black;
+}
+
+#headermenu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#searchbar {
+    align-self: center;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: inherit;
+    border-radius: 4px;
+}
+
+#searchbar input {
+    padding: 7px;
+    border-radius: inherit;
+    font-family: 'Special Elite', serif;
+}
+
+#searchbar button img {
+    height: 3vh;
+}
+
+#panier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#panier img {
+    width: 5vh;
+}
+
+/* main configuration */
+
+h1, h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+main h2 {
+    font-style: italic;
+}
+
+main h2 span {
+    text-decoration: line-through;
+}
+
+/* table configuration */
+
+table {
+    border: none;
+    margin: 30px;
+}
+
+th {
+    background-color: #ff9900;
+    padding: 15px 0;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 3vh;
+}
+
+tr {
+    background-color: yellow;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFFF66;
+}
+
+td {
+    border-bottom: 2px solid #ff9900;
+    border-right: 1px solid #ff9900;
+    padding: 2px;
+}
+
+td img {
+    width: 20vh;
+    height: 20vh;
+}
+
+.itemname {
+    text-align: center;
+    font-family: 'Abril Fatface', serif;
+}
+
+.itemdesc {
+    text-align: left;
+    font-style: italic;
+}
+
+.itemvalue {
+    color: darkblue;
+    text-align: center;
+}
+
+.itemcheck {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 21vh;
+    justify-content: space-evenly;
+}
+.itemlink {
+    text-align: right;
+    padding-right: 30px;
+}
+
+/* style for the articles which were bought */
+
+.bought {
+   opacity: 0.4; 
+}
+.bought:hover {
+    text-decoration: line-through;
+}
+
+.bought .itemcheck input {
+    display: none;
+}
+
+.bought .itemlink a {
+    display: none;
+}
+
+/* style for the urgent articles */
+
+.urgent {
+    background-color: red;
+    font-weight: bold;
+}
+
+.urgentname span {
+    display: none;
+}
+
+.urgentname:hover span {
+    display: block;
+    color: white;
+    padding: 3px;
+    background-color: red;
+    font-weight: bolder;
+}
+
+/* style for selected articles */
+
+label {
+	display: none;
+}
+
+input[type=checkbox]:checked + label {
+    display: block;
+	color: white;
+    width: inherit;
+    background-color: #ff9900;
+}
+
+#linksection {
+    display: grid;
+    grid-template-areas: "sectiontitle sectiontitle"
+                         "button1 button2";
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    justify-content: stretch;
+    margin-bottom: 30px;
+}
+
+.linkbutton {
+    border: 1px solid darkgoldenrod;
+    background-color: #ff9900;
+    color: black;
+    font-family: 'Abril Fatface', serif; 
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px darkgoldenrod;
+}
+
+.linkbutton:hover {
+    animation-name: buttonanimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#linksection h3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.button1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.button2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+@keyframes buttonanimation {
+    from {background-color: #ff9900; color: black;}
+    to {background-color: #7a4a02; color: white;}
+}
+
+/* style for the footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    padding: 20px 15px;
+    justify-items: center;
+}
+
+footer article h3 {
+    margin: 10px 0;
+}
+
+footer article p {
+    font-family: 'Special Elite', serif;
+    color: black;
+}
+
+/* style for the formulaire.html page */
+
+#mainformulaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: stretch;
+}
+
+#mainform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px 0;
+    border: 1px solid sienna;
+    padding: 30px 10px;
+    width: 100vh;
+}
+
+.formitem {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px;
+    align-items: center;
+}
+
+.formlabel {
+    display: inline-block;
+    padding: 5px;
+}
+
+.formradio {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 5px;
+    align-items: center;
+}
+
+input, select, textarea {
+    font-family: 'Special Elite', serif;
+    padding: 10px;
+    border-radius: 4px;
+}
