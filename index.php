@@ -253,6 +253,48 @@
             </div>
         </section>
         <section class="works section" id="portfolio">
+        <div class="controls">
+            <h1>Animations, Transitions and 3D Transforms</h1>
+            <p>This demo shows some more interesting content using 3D transforms, animations and transitions.
+            Note that you can still select the text on the the elements, even while they are rotating. Transforms elements remain
+                fully interactive.</p>
+            <p>Click Toggle Shape to switch between nested cubes and one big ring. Note how the planes move smoothly to their new locations,
+            even while the whole shape is rotating. You can even interrupt this transition by clicking again, and they move back smoothly.</p>
+            <p>Toggle the Backfaces Visible checkbox to turn backfaces on and off using <code>-webkit-backface-visibility</code>.</p>
+            <div><button onclick="toggleShape()">Toggle Shape</button></div>
+            <div><input type="checkbox" id="backfaces" onclick="toggleBackfaces()" checked><label for="backfaces">Backfaces visible</label></div>
+        </div>
+
+        <div id="container">
+            <div id="stage">
+                <div id="shape" class="cube backfaces">
+                    <div class="plane one">
+                        <!-- <a target="blank" href="assets/projets/livre-or/index.php">un livre d'or</a> -->
+                        <!-- <h3>Un livre d'or dédié à Spinoza</h3>
+                        <h4>l'un de mes premiers projets en PHP</h4> -->
+                    </div>
+                    <div class="plane two">
+                        <!-- <a target="blank" href="assets/projets/app-favorites/app-favorites.html">site sur mes app favorites</a> -->
+                    </div>
+                    <div class="plane three">
+                        <!-- <a target="blank" href="assets/projets/voyages/voyages.html">un site de voyages</a> -->
+                    </div>
+                    <div class="plane four">
+                        <!-- <a target="blank" href="assets/projets/discussion/index.php">un espace de discussion</a> -->
+                    </div>
+                    <div class="plane five">
+                        <img class="works__prt" src="assets/images/forum.png" alt="">
+                    </div>
+                    <div class="plane six">6</div>
+                    <!-- <div class="plane seven">7</div>
+                    <div class="plane eight">8</div>
+                    <div class="plane nine">9</div>
+                    <div class="plane ten">10</div>
+                    <div class="plane eleven">11</div>
+                    <div class="plane twelve">12</div> -->
+                </div>
+            </div>
+        </div>
         <h2 class="section-title">Mes projets</h2>
         <div class="container">
             <div class="row">
