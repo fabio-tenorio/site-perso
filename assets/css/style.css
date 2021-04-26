@@ -919,7 +919,7 @@ brique-top {
 
     body {
       background-color: black;
-      color: white;
+      /* color: white; */
       font-family: 'Lucida Grande', Verdana, Arial;
       font-size: 12px;
       background-image: -webkit-gradient(radial,
