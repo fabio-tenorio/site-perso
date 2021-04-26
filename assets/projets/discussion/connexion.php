@@ -8,7 +8,7 @@
 session_start();
 
 function connexion () {
-        $database = mysqli_connect ("localhost:3306", "fabio-tenorio", "owP97b~3", "fabio-tenorio-de-carvalho_discussion");
+        $database = mysqli_connect ("localhost:3306", "fabio-tenorio", "t84ehC0^", "fabio-tenorio-de-carvalho_discussion");
     // vérifier la connexion à la bdd
     if (mysqli_connect_errno()) {
         echo "connexion échouée".mysqli_connect_error();

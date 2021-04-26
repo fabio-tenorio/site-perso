@@ -15,7 +15,10 @@ echo '</pre>';
 
 try
 {
-  $bdd =new PDO('mysql:host=localhost;dbname=forum', 'root', ''); //Activation des erreurs PDO
+  $dsn = 'mysql:host=localhost:3306;dbname=fabio-tenorio-de-carvalho_forum';
+  $dbuser = 'fabio-tenorio';
+  $dbpassword = 't84ehC0^';
+  $bdd =new PDO($dsn, $dbuser, $dbpassword); //Activation des erreurs PDO
   $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
   //Fetch par défaut : FETCH_ASSOC / _OBJ / _BOTH
   $bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);

@@ -18,7 +18,7 @@
 // - Une page d’accueil qui présente votre site (index.php)
 
 session_start();
-$database = mysqli_connect ("localhost:3306", "fabio-tenorio", "owP97b~3", "fabio-tenorio-de-carvalho_discussion");
+$database = mysqli_connect ("localhost:3306", "fabio-tenorio", "t84ehC0^", "fabio-tenorio-de-carvalho_discussion");
 // checker la connexion à bdd
 if (mysqli_connect_errno()) {
     echo "La connexion à la base de données a échouée".mysqli_connect_error();

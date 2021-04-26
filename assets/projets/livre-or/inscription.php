@@ -21,7 +21,7 @@ base de données et l’utilisateur est redirigé vers la page de connexion.
 -->
 
 <?php
-$database = mysqli_connect ("localhost:3306", "fabio", "vtD*r569", "fabio-tenorio-de-carvalho_livreor");
+$database = mysqli_connect ("localhost:3306", "fabio-tenorio", "t84ehC0^", "fabio-tenorio-de-carvalho_livreor");
 // checker la connexion à bdd
 if (mysqli_connect_errno()) {
     echo "La connexion à la base de données a échouée".mysqli_connect_error();

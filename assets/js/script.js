@@ -1,71 +1,58 @@
-/* MENU SHOW & HIDDEN */
+    function hasClassName(inElement, inClassName)
+    {
+        var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)');
+        return regExp.test(inElement.className);
+    }
 
-// const navMenu = document.getElementById('nav-menu'),
-// toggleMenu = document.getElementById('nav-toggle'),
-// closeMenu = document.getElementById('nav-close')
+    function addClassName(inElement, inClassName)
+    {
+        if (!hasClassName(inElement, inClassName))
+            inElement.className = [inElement.className, inClassName].join(' ');
+    }
 
-// //SHOW
+    function removeClassName(inElement, inClassName)
+    {
+        if (hasClassName(inElement, inClassName)) {
+            var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)', 'g');
+            var curClasses = inElement.className;
+            inElement.className = curClasses.replace(regExp, ' ');
+        }
+    }
 
-// toggleMenu.addEventListener('click', ()=> {
-//     navMenu.classList.toggle('show')
-// });
+    function toggleClassName(inElement, inClassName)
+    {
+        if (hasClassName(inElement, inClassName))
+            removeClassName(inElement, inClassName);
+        else
+            addClassName(inElement, inClassName);
+    }
 
-// //HIDDEN
+    function toggleShape()
+    {
+      var shape = document.getElementById('shape');
+      if (hasClassName(shape, 'ring')) {
+        removeClassName(shape, 'ring');
+        addClassName(shape, 'cube');
+      } else {
+        removeClassName(shape, 'cube');
+        addClassName(shape, 'ring');
+      }
+      
+      // Move the ring back in Z so it's not so in-your-face.
+      var stage = document.getElementById('stage');
+      if (hasClassName(shape, 'ring'))
+        stage.style.webkitTransform = 'translateZ(-200px)';
+      else
+        stage.style.webkitTransform = '';
+    }
+    
+    function toggleBackfaces()
+    {
+      var backfacesVisible = document.getElementById('backfaces').checked;
+      var shape = document.getElementById('shape');
+      if (backfacesVisible)
+        addClassName(shape, 'backfaces');
+      else
+        removeClassName(shape, 'backfaces');
+    }
 
-// closeMenu.addEventListener('click', ()=> {
-//     navMenu.classList.remove('show')
-// });
-
-// //REMOVE MENU
-
-// const navLink =document.querySelectorAll('.nav__link');
-
-// function linkAction() {
-//     navMenu.classList.remove('show')    
-// }
-
-// navLink.forEach (n => n.addEventListener('click', linkAction))
-
-//SCROLL SECTIONS ACTIVE LINK
-
-// const sections = document.querySelectorAll('section[id]')
-
-// window.addEventListener('scroll', scrollActive)
-
-// function scrollActive() {
-//     const scrollY = window.pageYOffset
-
-//     sections.forEach(current =>{
-//         const sectionHeight = current.offsetHeight
-//         const sectionTop = current.offsetTop - 50
-//         sectionId = current.getAttribute('id')
-
-//         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-//             document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.add('active')
-//         } else {
-//             document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.remove('active')
-//         }
-//     })
-// }
-
-//SCROLL SECTIONS ACTIVE LINK
-
-const sections = document.querySelectorAll('section[id]')
-
-window.addEventListener('scroll', scrollActive)
-
-function scrollActive() {
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50
-        sectionId = current.getAttribute('id')
-
-        // if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        //     document.querySelector('nav-item .lien[href*='+ sectionId +']').classList.add('active')
-        // } else {
-        //     document.querySelector('nav-item .lien[href*='+ sectionId +']').classList.remove('active')
-        // }
-    })
-}
