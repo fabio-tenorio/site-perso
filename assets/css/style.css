@@ -833,6 +833,7 @@ brique-top {
 
     .about__description {
         margin-bottom: var(--mb-5);
+        color: #0E2433;
     }
     .about__img {
         width: 220px;
