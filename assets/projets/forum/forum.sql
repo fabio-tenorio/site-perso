@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.6.6deb5ubuntu0.5
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1:3306
--- Généré le : mer. 27 jan. 2021 à 12:29
--- Version du serveur :  5.7.31
--- Version de PHP : 7.3.21
+-- Host: localhost:3306
+-- Generation Time: Apr 23, 2021 at 05:49 PM
+-- Server version: 5.7.33-0ubuntu0.18.04.1
+-- PHP Version: 7.2.24-0ubuntu0.18.04.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -18,165 +17,159 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `forum`
+-- Database: `forum`
 --
-CREATE DATABASE IF NOT EXISTS `forum` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `forum`;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `commentaires`
+-- Table structure for table `commentaires`
 --
 
-DROP TABLE IF EXISTS `commentaires`;
-CREATE TABLE IF NOT EXISTS `commentaires` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `commentaires` (
+  `id` int(11) NOT NULL,
   `commentaire` text NOT NULL,
   `id_utilisateur` int(11) NOT NULL,
   `id_message` int(11) NOT NULL,
-  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4;
+  `date` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
--- Déchargement des données de la table `commentaires`
+-- Dumping data for table `commentaires`
 --
 
 INSERT INTO `commentaires` (`id`, `commentaire`, `id_utilisateur`, `id_message`, `date`) VALUES
-(1, 'Ecrivez un commentanioi', 1, 22, '2021-01-21 12:38:32'),
-(2, 'Ecrivez un commentanioi', 1, 9, '2021-01-21 12:38:32'),
-(3, 'Ecrivez un comKOPKOPKOPQmentaire...', 1, 22, '2021-01-21 13:55:55'),
-(4, 'Ecrivez un comKOPKOPKOPQmentaire...', 1, 9, '2021-01-21 13:55:55'),
-(5, 'Ecrivez un commentaire...GYUGYUO', 1, 22, '2021-01-21 13:58:57'),
-(6, 'Ca va marscher\r\n', 1, 9, '2021-01-21 13:59:32'),
-(7, 'test', 1, 22, '2021-01-21 14:04:50'),
-(8, 'test', 1, 22, '2021-01-21 14:05:42'),
-(9, 'Ecrivez un comuohmentaire...', 1, 22, '2021-01-21 14:11:45'),
-(10, 'Ecrivez un comuohmentaire...', 1, 22, '2021-01-21 14:14:28'),
-(11, 'Ecrivez un comuohmentaire...', 1, 22, '2021-01-21 14:14:48'),
-(12, 'Ecrivez un comuohmentaire...', 1, 22, '2021-01-21 14:15:37'),
-(13, 'Ecrivez un comuohmentaire...', 1, 22, '2021-01-21 14:16:30'),
-(14, 'Ecrivez un comuohmentaire...', 1, 22, '2021-01-21 14:17:13'),
-(15, 'Ecrivez un commentaire...jgygio', 1, 22, '2021-01-21 14:33:37'),
-(16, ',k,lk,lkl,l,', 1, 18, '2021-01-21 21:57:28'),
-(17, ',k,lk,lkl,l,', 1, 18, '2021-01-21 21:57:40'),
-(18, 'Le soir on dort', 1, 19, '2021-01-21 22:07:34'),
-(19, 'pffff', 1, 19, '2021-01-21 22:08:47'),
-(20, 'mi', 1, 19, '2021-01-21 22:10:05'),
-(21, ',kl,lk,lmq', 1, 20, '2021-01-21 23:11:23'),
-(22, 'J\'aime ton message', 1, 24, '2021-01-22 12:50:37'),
-(23, 'jdmjpojapo', 1, 17, '2021-01-22 13:36:19'),
-(24, 'njiomjiop', 1, 15, '2021-01-22 13:43:17'),
-(25, 'HIUHUP', 1, 66, '2021-01-23 08:55:33'),
-(26, 'JIOJOPIJP', 1, 66, '2021-01-23 08:55:45'),
-(27, 'message de merde', 3, 82, '2021-01-23 11:00:14'),
-(28, 'Un sourire coûte moins cher que l’électricité, mais donne autant de lumière.  Abbé Pierre', 3, 85, '2021-01-23 14:14:52'),
-(29, 'test de 19h09', 2, 79, '2021-01-23 19:09:51'),
-(30, '’ai fait un pas immense le jour où j’ai compris que j’étais seul à entretenir mes souffrances Jacques Salomé', 2, 64, '2021-01-23 19:13:04'),
-(31, 'Elle découvrait également que chaque livre l\'entraînait vers d\'autres livres, que les portes ne cessaient de s\'ouvrir, quels que soient les chemins empruntés, et que les journées n\'étaient pas assez longues pour lire autant qu\'elle l\'aurait voulu.', 2, 86, '2021-01-23 19:15:08'),
-(32, 'Elle découvrait également que chaque livre l\'entraînait vers d\'autres livres, que les portes ne cessaient de s\'ouvrir, quels que soient les chemins empruntés, et que les journées n\'étaient pas assez longues pour lire autant qu\'elle l\'aurait voulu.', 2, 86, '2021-01-23 19:18:18'),
-(33, 'La nuit paraît courte dans le plaisir, les veilles semblent longues dans la solitude.', 2, 86, '2021-01-23 20:11:41'),
-(34, 'La nuit paraît courte dans le plaisir, les veilles semblent longues dans la solitude.', 2, 86, '2021-01-23 20:13:28'),
-(35, 'La nuit paraît courte dans le plaisir, les veilles semblent longues dans la solitude.', 2, 86, '2021-01-23 20:15:11'),
-(36, '“En te levant le matin, rappelle-toi combien précieux est le privilège de vivre, de respirer, d\'être heureux.”', 1, 78, '2021-01-24 01:03:19'),
-(37, 'La violation des règles publiques n\'est (...) pas commise par l\'ego intime, mais est dictée par ces mêmes règles publiques qui se trouvent ainsi redoublées.', 1, 89, '2021-01-24 01:11:13'),
-(38, 'La violation des règles publiques n\'est (...) pas commise par l\'ego intime, mais est dictée par ces mêmes règles publiques qui se trouvent ainsi redoublées.', 1, 91, '2021-01-24 01:15:47'),
-(39, '$message->date', 1, 103, '2021-01-24 21:47:18'),
-(40, 'jdjsmdjmq', 1, 103, '2021-01-24 21:52:22'),
-(41, 'essais', 1, 86, '2021-01-24 22:43:09'),
-(42, 'fdjipj^per', 1, 68, '2021-01-25 10:39:52'),
-(43, 'kopkgeoùq', 1, 76, '2021-01-25 10:40:24'),
-(44, 'Woaaw', 1, 68, '2021-01-25 10:47:46'),
-(45, 'jiojiopjoîj', 1, 64, '2021-01-25 15:30:51'),
-(46, 'Un peu répétitif quand meme', 1, 83, '2021-01-25 21:45:32'),
-(47, 'kopkp', 1, 68, '2021-01-26 08:58:03'),
-(48, 'nouihhhhh', 3, 3, '2021-01-26 11:28:32'),
-(49, 'huiohioho', 1, 3, '2021-01-26 11:37:51'),
-(50, 'dojdsoippq', 1, 3, '2021-01-26 12:20:04'),
-(51, 'oijoiho', 1, 3, '2021-01-26 12:20:18'),
-(52, 'buihbipu', 1, 3, '2021-01-26 12:20:50'),
-(53, 'buihbipu', 1, 111, '2021-01-26 12:21:38'),
-(54, 'nojoijp', 1, 111, '2021-01-26 12:21:48'),
-(55, 'jiojiôj', 1, 116, '2021-01-26 13:55:42'),
-(56, 'JIODSJIOPFEZJOÄ', 1, 120, '2021-01-26 14:10:58'),
-(57, 'HIUHUILHL', 1, 112, '2021-01-26 20:48:47'),
-(58, 'nuoiup', 1, 68, '2021-01-27 01:14:31'),
-(59, 'nuoiup', 1, 68, '2021-01-27 01:20:39');
+(1, 'Ecrivez un commentanioi', 1, 22, '2021-01-21 11:38:32'),
+(2, 'Ecrivez un commentanioi', 1, 9, '2021-01-21 11:38:32'),
+(3, 'Ecrivez un comKOPKOPKOPQmentaire...', 1, 22, '2021-01-21 12:55:55'),
+(4, 'Ecrivez un comKOPKOPKOPQmentaire...', 1, 9, '2021-01-21 12:55:55'),
+(5, 'Ecrivez un commentaire...GYUGYUO', 1, 22, '2021-01-21 12:58:57'),
+(6, 'Ca va marscher\r\n', 1, 9, '2021-01-21 12:59:32'),
+(7, 'test', 1, 22, '2021-01-21 13:04:50'),
+(8, 'test', 1, 22, '2021-01-21 13:05:42'),
+(9, 'Ecrivez un comuohmentaire...', 1, 22, '2021-01-21 13:11:45'),
+(10, 'Ecrivez un comuohmentaire...', 1, 22, '2021-01-21 13:14:28'),
+(11, 'Ecrivez un comuohmentaire...', 1, 22, '2021-01-21 13:14:48'),
+(12, 'Ecrivez un comuohmentaire...', 1, 22, '2021-01-21 13:15:37'),
+(13, 'Ecrivez un comuohmentaire...', 1, 22, '2021-01-21 13:16:30'),
+(14, 'Ecrivez un comuohmentaire...', 1, 22, '2021-01-21 13:17:13'),
+(15, 'Ecrivez un commentaire...jgygio', 1, 22, '2021-01-21 13:33:37'),
+(16, ',k,lk,lkl,l,', 1, 18, '2021-01-21 20:57:28'),
+(17, ',k,lk,lkl,l,', 1, 18, '2021-01-21 20:57:40'),
+(18, 'Le soir on dort', 1, 19, '2021-01-21 21:07:34'),
+(19, 'pffff', 1, 19, '2021-01-21 21:08:47'),
+(20, 'mi', 1, 19, '2021-01-21 21:10:05'),
+(21, ',kl,lk,lmq', 1, 20, '2021-01-21 22:11:23'),
+(22, 'J\'aime ton message', 1, 24, '2021-01-22 11:50:37'),
+(23, 'jdmjpojapo', 1, 17, '2021-01-22 12:36:19'),
+(24, 'njiomjiop', 1, 15, '2021-01-22 12:43:17'),
+(25, 'HIUHUP', 1, 66, '2021-01-23 07:55:33'),
+(26, 'JIOJOPIJP', 1, 66, '2021-01-23 07:55:45'),
+(27, 'message de merde', 3, 82, '2021-01-23 10:00:14'),
+(28, 'Un sourire coûte moins cher que l’électricité, mais donne autant de lumière.  Abbé Pierre', 3, 85, '2021-01-23 13:14:52'),
+(29, 'test de 19h09', 2, 79, '2021-01-23 18:09:51'),
+(30, '’ai fait un pas immense le jour où j’ai compris que j’étais seul à entretenir mes souffrances Jacques Salomé', 2, 64, '2021-01-23 18:13:04'),
+(31, 'Elle découvrait également que chaque livre l\'entraînait vers d\'autres livres, que les portes ne cessaient de s\'ouvrir, quels que soient les chemins empruntés, et que les journées n\'étaient pas assez longues pour lire autant qu\'elle l\'aurait voulu.', 2, 86, '2021-01-23 18:15:08'),
+(32, 'Elle découvrait également que chaque livre l\'entraînait vers d\'autres livres, que les portes ne cessaient de s\'ouvrir, quels que soient les chemins empruntés, et que les journées n\'étaient pas assez longues pour lire autant qu\'elle l\'aurait voulu.', 2, 86, '2021-01-23 18:18:18'),
+(33, 'La nuit paraît courte dans le plaisir, les veilles semblent longues dans la solitude.', 2, 86, '2021-01-23 19:11:41'),
+(34, 'La nuit paraît courte dans le plaisir, les veilles semblent longues dans la solitude.', 2, 86, '2021-01-23 19:13:28'),
+(35, 'La nuit paraît courte dans le plaisir, les veilles semblent longues dans la solitude.', 2, 86, '2021-01-23 19:15:11'),
+(36, '“En te levant le matin, rappelle-toi combien précieux est le privilège de vivre, de respirer, d\'être heureux.”', 1, 78, '2021-01-24 00:03:19'),
+(37, 'La violation des règles publiques n\'est (...) pas commise par l\'ego intime, mais est dictée par ces mêmes règles publiques qui se trouvent ainsi redoublées.', 1, 89, '2021-01-24 00:11:13'),
+(38, 'La violation des règles publiques n\'est (...) pas commise par l\'ego intime, mais est dictée par ces mêmes règles publiques qui se trouvent ainsi redoublées.', 1, 91, '2021-01-24 00:15:47'),
+(39, '$message->date', 1, 103, '2021-01-24 20:47:18'),
+(40, 'jdjsmdjmq', 1, 103, '2021-01-24 20:52:22'),
+(41, 'essais', 1, 86, '2021-01-24 21:43:09'),
+(42, 'fdjipj^per', 1, 68, '2021-01-25 09:39:52'),
+(43, 'kopkgeoùq', 1, 76, '2021-01-25 09:40:24'),
+(44, 'Woaaw', 1, 68, '2021-01-25 09:47:46'),
+(45, 'jiojiopjoîj', 1, 64, '2021-01-25 14:30:51'),
+(46, 'Un peu répétitif quand meme', 1, 83, '2021-01-25 20:45:32'),
+(47, 'kopkp', 1, 68, '2021-01-26 07:58:03'),
+(48, 'nouihhhhh', 3, 3, '2021-01-26 10:28:32'),
+(49, 'huiohioho', 1, 3, '2021-01-26 10:37:51'),
+(50, 'dojdsoippq', 1, 3, '2021-01-26 11:20:04'),
+(51, 'oijoiho', 1, 3, '2021-01-26 11:20:18'),
+(52, 'buihbipu', 1, 3, '2021-01-26 11:20:50'),
+(53, 'buihbipu', 1, 111, '2021-01-26 11:21:38'),
+(54, 'nojoijp', 1, 111, '2021-01-26 11:21:48'),
+(55, 'jiojiôj', 1, 116, '2021-01-26 12:55:42'),
+(56, 'JIODSJIOPFEZJOÄ', 1, 120, '2021-01-26 13:10:58'),
+(57, 'HIUHUILHL', 1, 112, '2021-01-26 19:48:47'),
+(58, 'nuoiup', 1, 68, '2021-01-27 00:14:31'),
+(59, 'nuoiup', 1, 68, '2021-01-27 00:20:39'),
+(60, 'J\'aimerais avoir accès au forum', 1, 128, '2021-01-28 08:31:09');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `conversations`
+-- Table structure for table `conversations`
 --
 
-DROP TABLE IF EXISTS `conversations`;
-CREATE TABLE IF NOT EXISTS `conversations` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `conversations` (
+  `id` int(11) NOT NULL,
   `titre` varchar(255) NOT NULL,
   `id_topic` int(11) NOT NULL,
   `id_message` int(11) NOT NULL DEFAULT '0',
   `id_utilisateur` int(11) NOT NULL,
-  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=108 DEFAULT CHARSET=utf8mb4;
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
--- Déchargement des données de la table `conversations`
+-- Dumping data for table `conversations`
 --
 
 INSERT INTO `conversations` (`id`, `titre`, `id_topic`, `id_message`, `id_utilisateur`, `date`) VALUES
-(61, 'TEST', 3, 86, 1, '2021-01-22 22:07:07'),
-(105, 'Des boucles dans des boucles', 11, 127, 1, '2021-01-27 00:10:20'),
-(92, 'Namespace', 3, 83, 3, '2021-01-23 11:01:59'),
-(91, 'Vérification des merges', 3, 82, 3, '2021-01-23 10:59:38'),
-(87, 'bistrot', 3, 61, 1, '2021-01-23 02:04:04'),
-(107, 'prive', 10, 129, 4, '2021-01-27 11:14:46'),
-(89, 'Test du samedi', 3, 110, 3, '2021-01-23 09:31:19'),
-(88, 'Ca marche', 3, 62, 1, '2021-01-23 02:08:10'),
-(106, 'Des boucles dans des boucles', 11, 0, 1, '2021-01-27 10:44:56');
+(61, 'TEST', 3, 86, 1, '2021-01-22 21:07:07'),
+(109, 'Nouvelle conversation', 11, 134, 1, '2021-02-24 13:10:40'),
+(92, 'Namespace', 3, 83, 3, '2021-01-23 10:01:59'),
+(91, 'Vérification des merges', 3, 82, 3, '2021-01-23 09:59:38'),
+(87, 'bistrot', 3, 61, 1, '2021-01-23 01:04:04'),
+(107, 'prive', 10, 131, 4, '2021-01-27 10:14:46'),
+(89, 'Test du samedi', 3, 110, 3, '2021-01-23 08:31:19'),
+(88, 'Ca marche', 3, 62, 1, '2021-01-23 01:08:10'),
+(106, 'Des boucles dans des boucles', 11, 0, 1, '2021-01-27 09:44:56'),
+(110, 'obaoba', 11, 135, 10, '2021-04-23 15:19:14');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `dislike`
+-- Table structure for table `dislike`
 --
 
-DROP TABLE IF EXISTS `dislike`;
-CREATE TABLE IF NOT EXISTS `dislike` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `dislike` (
+  `id` int(11) NOT NULL,
   `id_utilisateur` int(11) NOT NULL,
   `id_message` int(11) NOT NULL,
   `id_conversation` int(11) NOT NULL,
-  `id_topic` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=131 DEFAULT CHARSET=utf8mb4;
+  `id_topic` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
--- Déchargement des données de la table `dislike`
+-- Dumping data for table `dislike`
 --
 
 INSERT INTO `dislike` (`id`, `id_utilisateur`, `id_message`, `id_conversation`, `id_topic`) VALUES
-(122, 1, 61, 87, 0),
+(134, 1, 133, 109, 11),
 (119, 1, 88, 89, 0),
-(121, 1, 77, 89, 0),
+(135, 10, 135, 110, 11),
 (123, 1, 66, 61, 0),
-(130, 1, 89, 89, 3);
+(130, 1, 89, 89, 3),
+(133, 1, 126, 105, 11);
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `droits`
+-- Table structure for table `droits`
 --
 
-DROP TABLE IF EXISTS `droits`;
-CREATE TABLE IF NOT EXISTS `droits` (
+CREATE TABLE `droits` (
   `id` int(11) NOT NULL,
   `nom` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
--- Déchargement des données de la table `droits`
+-- Dumping data for table `droits`
 --
 
 INSERT INTO `droits` (`id`, `nom`) VALUES
@@ -187,190 +180,181 @@ INSERT INTO `droits` (`id`, `nom`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `likes`
+-- Table structure for table `likes`
 --
 
-DROP TABLE IF EXISTS `likes`;
-CREATE TABLE IF NOT EXISTS `likes` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `likes` (
+  `id` int(11) NOT NULL,
   `id_utilisateur` int(11) NOT NULL,
   `id_message` int(11) NOT NULL,
   `id_conversation` int(11) NOT NULL,
-  `id_topic` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=202 DEFAULT CHARSET=utf8mb4;
+  `id_topic` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
--- Déchargement des données de la table `likes`
+-- Dumping data for table `likes`
 --
 
 INSERT INTO `likes` (`id`, `id_utilisateur`, `id_message`, `id_conversation`, `id_topic`) VALUES
-(187, 1, 76, 89, 0),
 (190, 1, 78, 89, 0),
 (192, 1, 63, 61, 0),
 (193, 1, 64, 61, 0),
-(195, 1, 86, 61, 0);
+(195, 1, 86, 61, 0),
+(209, 1, 131, 107, 10),
+(210, 1, 128, 107, 10);
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `messages`
+-- Table structure for table `messages`
 --
 
-DROP TABLE IF EXISTS `messages`;
-CREATE TABLE IF NOT EXISTS `messages` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `messages` (
+  `id` int(11) NOT NULL,
   `message` text NOT NULL,
   `like` int(11) NOT NULL DEFAULT '0',
   `dislike` int(11) NOT NULL DEFAULT '0',
   `id_conversation` int(11) NOT NULL,
   `id_topic` int(11) NOT NULL,
   `id_utilisateurs` int(11) NOT NULL,
-  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=130 DEFAULT CHARSET=utf8mb4;
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
--- Déchargement des données de la table `messages`
+-- Dumping data for table `messages`
 --
 
 INSERT INTO `messages` (`id`, `message`, `like`, `dislike`, `id_conversation`, `id_topic`, `id_utilisateurs`, `date`) VALUES
-(126, ';,kp,p,ù,k,k,k,', 0, 0, 105, 10, 1, '2021-01-27 00:10:20'),
-(67, 'JIOJOMIIOJIO', 0, 0, 61, 0, 1, '2021-01-23 08:56:53'),
-(66, 'On test encore et encore', 0, 0, 61, 0, 1, '2021-01-23 02:23:09'),
-(61, 'bistrot', 0, 0, 87, 0, 1, '2021-01-23 02:04:04'),
-(65, 'On test encore et encore', 0, 0, 61, 0, 1, '2021-01-23 02:21:50'),
-(64, 'On test encore et encore', 0, 0, 61, 0, 1, '2021-01-23 02:20:38'),
-(63, 'On test encore et encore', 0, 0, 61, 0, 1, '2021-01-23 02:19:46'),
-(62, 'ou pas,  on espere que oui', 0, 0, 88, 0, 1, '2021-01-23 02:08:10'),
-(68, 'On continue d\'ameliorer les fonctionnalités', 0, 0, 89, 0, 3, '2021-01-23 09:31:19'),
-(82, 'bip biop', 0, 0, 91, 0, 3, '2021-01-23 11:00:00'),
-(83, 'NamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespace', 0, 0, 92, 0, 3, '2021-01-23 11:01:59'),
-(81, 'Vérification qu\'il n\'y a aucun bug après les merges', 0, 0, 91, 0, 3, '2021-01-23 10:59:38'),
-(80, 'Vérification qu\'il n\'y a aucun bug après les merges', 0, 0, 90, 0, 3, '2021-01-23 10:55:04'),
-(78, 'TEST DE 10h', 0, 0, 89, 0, 3, '2021-01-23 10:33:05'),
-(127, 'fd,lkmjdsmq', 0, 0, 105, 11, 1, '2021-01-27 10:44:56'),
-(76, 'TEST DE 10h', 0, 0, 89, 0, 3, '2021-01-23 09:59:39'),
-(77, 'TEST DE 10h', 0, 0, 89, 0, 3, '2021-01-23 10:23:35'),
-(84, 'LES 4 ANCRAGES DE LA VIE: Apprendre à s’aimer avec bienveillance, Apprendre à se respecter, Apprendre à se responsabiliser, Apprendre à être fidèle à soi. Jacques Salomé', 0, 0, 61, 0, 3, '2021-01-23 13:25:54'),
-(85, 'LES 4 ANCRAGES DE LA VIE: Apprendre à s’aimer avec bienveillance, Apprendre à se respecter, Apprendre à se responsabiliser, Apprendre à être fidèle à soi. Jacques Salomé', 0, 0, 61, 0, 3, '2021-01-23 13:26:31'),
-(86, 'J’ai un côté rigolo qui me sauve de tout, mais j’ai aussi un côté très sombre et grave qui fait que, quand je plonge, je plonge. La différence est que, durant de longues années, ma plongée pouvait durer des mois et que, maintenant, je suis capable de rebondir au bout de deux jours. Je me dis que la vie est lumineuse et qu’on a la chance d’avoir plusieurs vies dans une vie !\r\n', 0, 0, 61, 0, 2, '2021-01-23 19:14:34'),
-(87, 'Citation Vie & Lumiere\r\n50 ans ont passés. 50 longues années depuis mon premier message. Quand je repense à ce que j\'ai dit il y a un demi-siècle, quand je repense à tous mes espoirs et à tous mes rêves de jeunes hommes, une [...] ► Lire la suite', 0, 0, 93, 0, 2, '2021-01-23 20:41:12'),
-(88, 'La violation des règles publiques n\'est (...) pas commise par l\'ego intime, mais est dictée par ces mêmes règles publiques qui se trouvent ainsi redoublées.', 0, 0, 89, 0, 1, '2021-01-24 01:10:15'),
-(89, 'La violation des règles publiques n\'est (...) pas commise par l\'ego intime, mais est dictée par ces mêmes règles publiques qui se trouvent ainsi redoublées.\r\n', 0, 0, 89, 0, 1, '2021-01-24 01:10:24'),
-(90, 'La violation des règles publiques n\'est (...) pas commise par l\'ego intime, mais est dictée par ces mêmes règles publiques qui se trouvent ainsi redoublées.', 0, 0, 89, 0, 1, '2021-01-24 01:11:39'),
-(91, 'La violation des règles publiques n\'est (...) pas commise par l\'ego intime, mais est dictée par ces mêmes règles publiques qui se trouvent ainsi redoublées.', 0, 0, 89, 0, 1, '2021-01-24 01:13:09'),
-(92, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 13:12:31'),
-(93, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 13:16:01'),
-(94, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 13:16:47'),
-(95, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 13:17:25'),
-(96, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 13:18:18'),
-(97, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 13:19:08'),
-(98, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 13:20:45'),
-(99, '19h43', 0, 0, 89, 0, 1, '2021-01-24 19:43:04'),
-(100, '19h51', 0, 0, 89, 0, 1, '2021-01-24 19:51:33'),
-(101, 'test qui devrait reussir', 0, 0, 89, 0, 1, '2021-01-24 21:01:03'),
-(102, 'test qui devrait reussir', 0, 0, 89, 0, 1, '2021-01-24 21:04:06'),
-(103, 'test qui devrait reussir', 0, 0, 89, 0, 1, '2021-01-24 21:04:25'),
-(104, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 22:27:50'),
-(105, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 22:27:55'),
-(106, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 22:28:01'),
-(107, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 22:28:09'),
-(108, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 22:28:15'),
-(109, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 22:30:17'),
-(110, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 22:30:33'),
-(111, 'Qu\'en pensez-vous ?', 0, 0, 94, 0, 1, '2021-01-25 10:49:39'),
-(128, 'ne pas rentrer', 0, 0, 107, 10, 4, '2021-01-27 11:14:46'),
-(114, 'parce que le covid est dangereux pour les personnes agées', 0, 0, 94, 0, 1, '2021-01-26 12:22:45'),
-(115, ',ifjerioâjiofjzôf', 0, 0, 97, 7, 1, '2021-01-26 13:50:36'),
-(116, 'biuhbpiuhiphi', 0, 0, 98, 7, 1, '2021-01-26 13:50:58'),
-(117, 'huhhuophpuhp', 0, 0, 98, 7, 1, '2021-01-26 13:55:25'),
-(118, 'bla bla bla', 0, 0, 99, 7, 1, '2021-01-26 14:01:20'),
-(119, 'effectivement un grand discours', 0, 0, 99, 7, 1, '2021-01-26 14:01:37'),
-(120, 'c\'est de la merde', 0, 0, 100, 8, 1, '2021-01-26 14:10:44'),
-(121, 'DJJDIOJÖC', 0, 0, 100, 8, 1, '2021-01-26 14:10:54'),
-(122, 'NamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespace', 0, 0, 101, 8, 1, '2021-01-26 15:49:50'),
-(123, 'LAJCIJPRP%QP%KP%', 0, 0, 102, 9, 1, '2021-01-26 15:52:52'),
-(124, 'NamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespace', 0, 0, 103, 9, 1, '2021-01-26 15:56:28'),
-(125, 'ggzgtg', 0, 0, 104, 9, 1, '2021-01-26 15:58:34'),
-(129, 'dc,o,oropjieoap', 0, 0, 107, 10, 4, '2021-01-27 11:15:00');
+(134, 'je ne sais pas', 0, 0, 109, 11, 1, '2021-02-24 13:11:13'),
+(133, 'ok', 0, 0, 109, 11, 1, '2021-02-24 13:10:40'),
+(65, 'On test encore et encore', 0, 0, 61, 0, 1, '2021-01-23 01:21:50'),
+(64, 'On test encore et encore', 0, 0, 61, 0, 1, '2021-01-23 01:20:38'),
+(63, 'On test encore et encore', 0, 0, 61, 0, 1, '2021-01-23 01:19:46'),
+(62, 'ou pas,  on espere que oui', 0, 0, 88, 0, 1, '2021-01-23 01:08:10'),
+(68, 'On continue d\'ameliorer les fonctionnalités', 0, 0, 89, 0, 3, '2021-01-23 08:31:19'),
+(82, 'bip biop', 0, 0, 91, 0, 3, '2021-01-23 10:00:00'),
+(83, 'NamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespace', 0, 0, 92, 0, 3, '2021-01-23 10:01:59'),
+(81, 'Vérification qu\'il n\'y a aucun bug après les merges', 0, 0, 91, 0, 3, '2021-01-23 09:59:38'),
+(80, 'Vérification qu\'il n\'y a aucun bug après les merges', 0, 0, 90, 0, 3, '2021-01-23 09:55:04'),
+(78, 'TEST DE 10h', 0, 0, 89, 0, 3, '2021-01-23 09:33:05'),
+(130, 'Apparemment, tout marche bien.', 0, 0, 108, 10, 1, '2021-01-27 23:30:46'),
+(76, 'TEST DE 10h', 0, 0, 89, 0, 3, '2021-01-23 08:59:39'),
+(135, 'c\'est l\'obaoba', 0, 0, 110, 11, 10, '2021-04-23 15:19:14'),
+(84, 'LES 4 ANCRAGES DE LA VIE: Apprendre à s’aimer avec bienveillance, Apprendre à se respecter, Apprendre à se responsabiliser, Apprendre à être fidèle à soi. Jacques Salomé', 0, 0, 61, 0, 3, '2021-01-23 12:25:54'),
+(85, 'LES 4 ANCRAGES DE LA VIE: Apprendre à s’aimer avec bienveillance, Apprendre à se respecter, Apprendre à se responsabiliser, Apprendre à être fidèle à soi. Jacques Salomé', 0, 0, 61, 0, 3, '2021-01-23 12:26:31'),
+(86, 'J’ai un côté rigolo qui me sauve de tout, mais j’ai aussi un côté très sombre et grave qui fait que, quand je plonge, je plonge. La différence est que, durant de longues années, ma plongée pouvait durer des mois et que, maintenant, je suis capable de rebondir au bout de deux jours. Je me dis que la vie est lumineuse et qu’on a la chance d’avoir plusieurs vies dans une vie !\r\n', 0, 0, 61, 0, 2, '2021-01-23 18:14:34'),
+(87, 'Citation Vie & Lumiere\r\n50 ans ont passés. 50 longues années depuis mon premier message. Quand je repense à ce que j\'ai dit il y a un demi-siècle, quand je repense à tous mes espoirs et à tous mes rêves de jeunes hommes, une [...] ► Lire la suite', 0, 0, 93, 0, 2, '2021-01-23 19:41:12'),
+(88, 'La violation des règles publiques n\'est (...) pas commise par l\'ego intime, mais est dictée par ces mêmes règles publiques qui se trouvent ainsi redoublées.', 0, 0, 89, 0, 1, '2021-01-24 00:10:15'),
+(89, 'La violation des règles publiques n\'est (...) pas commise par l\'ego intime, mais est dictée par ces mêmes règles publiques qui se trouvent ainsi redoublées.\r\n', 0, 0, 89, 0, 1, '2021-01-24 00:10:24'),
+(90, 'La violation des règles publiques n\'est (...) pas commise par l\'ego intime, mais est dictée par ces mêmes règles publiques qui se trouvent ainsi redoublées.', 0, 0, 89, 0, 1, '2021-01-24 00:11:39'),
+(91, 'La violation des règles publiques n\'est (...) pas commise par l\'ego intime, mais est dictée par ces mêmes règles publiques qui se trouvent ainsi redoublées.', 0, 0, 89, 0, 1, '2021-01-24 00:13:09'),
+(92, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 12:12:31'),
+(93, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 12:16:01'),
+(94, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 12:16:47'),
+(95, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 12:17:25'),
+(96, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 12:18:18'),
+(97, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 12:19:08'),
+(98, 'La date marche t elle?', 0, 0, 89, 0, 1, '2021-01-24 12:20:45'),
+(99, '19h43', 0, 0, 89, 0, 1, '2021-01-24 18:43:04'),
+(100, '19h51', 0, 0, 89, 0, 1, '2021-01-24 18:51:33'),
+(101, 'test qui devrait reussir', 0, 0, 89, 0, 1, '2021-01-24 20:01:03'),
+(102, 'test qui devrait reussir', 0, 0, 89, 0, 1, '2021-01-24 20:04:06'),
+(103, 'test qui devrait reussir', 0, 0, 89, 0, 1, '2021-01-24 20:04:25'),
+(104, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 21:27:50'),
+(105, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 21:27:55'),
+(106, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 21:28:01'),
+(107, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 21:28:09'),
+(108, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 21:28:15'),
+(109, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 21:30:17'),
+(110, ' La vie est une ivresse continuelle : le plaisir passe, le mal de tête reste. \r\n', 0, 0, 89, 0, 1, '2021-01-24 21:30:33'),
+(111, 'Qu\'en pensez-vous ?', 0, 0, 94, 0, 1, '2021-01-25 09:49:39'),
+(128, 'ne pas rentrer', 0, 0, 107, 10, 4, '2021-01-27 10:14:46'),
+(114, 'parce que le covid est dangereux pour les personnes agées', 0, 0, 94, 0, 1, '2021-01-26 11:22:45'),
+(115, ',ifjerioâjiofjzôf', 0, 0, 97, 7, 1, '2021-01-26 12:50:36'),
+(116, 'biuhbpiuhiphi', 0, 0, 98, 7, 1, '2021-01-26 12:50:58'),
+(117, 'huhhuophpuhp', 0, 0, 98, 7, 1, '2021-01-26 12:55:25'),
+(118, 'bla bla bla', 0, 0, 99, 7, 1, '2021-01-26 13:01:20'),
+(119, 'effectivement un grand discours', 0, 0, 99, 7, 1, '2021-01-26 13:01:37'),
+(120, 'c\'est de la merde', 0, 0, 100, 8, 1, '2021-01-26 13:10:44'),
+(121, 'DJJDIOJÖC', 0, 0, 100, 8, 1, '2021-01-26 13:10:54'),
+(122, 'NamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespace', 0, 0, 101, 8, 1, '2021-01-26 14:49:50'),
+(123, 'LAJCIJPRP%QP%KP%', 0, 0, 102, 9, 1, '2021-01-26 14:52:52'),
+(124, 'NamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespaceNamespace', 0, 0, 103, 9, 1, '2021-01-26 14:56:28'),
+(125, 'ggzgtg', 0, 0, 104, 9, 1, '2021-01-26 14:58:34'),
+(129, 'dc,o,oropjieoap', 0, 0, 107, 10, 4, '2021-01-27 10:15:00'),
+(131, 'Même si je ne sais pas trop en quoi je pourrais contribuer aux discussions', 0, 0, 107, 10, 1, '2021-01-28 08:31:53');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `topic`
+-- Table structure for table `topic`
 --
 
-DROP TABLE IF EXISTS `topic`;
-CREATE TABLE IF NOT EXISTS `topic` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `topic` (
+  `id` int(11) NOT NULL,
   `titre` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   `id_createur` varchar(255) NOT NULL,
   `id_droits` int(11) NOT NULL,
-  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
--- Déchargement des données de la table `topic`
+-- Dumping data for table `topic`
 --
 
 INSERT INTO `topic` (`id`, `titre`, `description`, `id_createur`, `id_droits`, `date`) VALUES
-(11, 'prive topic', 'prive topic', '1', 1, '2021-01-27 10:44:37'),
-(3, 'test', 'test test test test esst es', '2', 1, '2021-01-22 19:34:22'),
-(10, 'PHP', 'on test', '1', 0, '2021-01-27 00:10:03');
+(11, 'prive topic', 'prive topic', '1', 1, '2021-01-27 09:44:37'),
+(3, 'test', 'test test test test esst es', '2', 1, '2021-01-22 18:34:22'),
+(10, 'PHP', 'on test', '1', 0, '2021-01-26 23:10:03');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `utilisateurs`
+-- Table structure for table `utilisateurs`
 --
 
-DROP TABLE IF EXISTS `utilisateurs`;
-CREATE TABLE IF NOT EXISTS `utilisateurs` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `utilisateurs` (
+  `id` int(11) NOT NULL,
   `login` varchar(255) NOT NULL,
   `nom` varchar(255) NOT NULL,
   `prenom` varchar(255) NOT NULL,
   `mail` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `id_droits` int(11) NOT NULL,
-  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
--- Déchargement des données de la table `utilisateurs`
+-- Dumping data for table `utilisateurs`
 --
 
 INSERT INTO `utilisateurs` (`id`, `login`, `nom`, `prenom`, `mail`, `password`, `id_droits`, `date`) VALUES
-(1, 'Manu', 'Cabassot', 'Manouelle', 'emmanu.cabassot@laplateforme.io', '$2y$10$VY8GaF0nDq8fDXYvsLr3ieRBac9084veBCiWn.0Ek5N2xOJxPGSDa', 200, '2021-01-12 23:25:23'),
-(2, 'Olive', 'Puche', 'Olivier', 'olivier.puche@laplateforme.io', '$2y$10$kMyjwWvB1ZJ9TwzkQgLZdOHN.2j7mBauED6YolKwisR.YdJeRSE72', 100, '2021-01-12 23:40:05'),
-(3, 'Fabino', 'Tenorio', 'Fabio', 'fabio.tenorio@laplateforme.io', '$2y$10$2I22etbziDLfx1Sqn6hvyOKRA.pqVABqlqwb0HaEeeVJOmf4UmJDO', 200, '2021-01-12 23:57:27'),
-(4, 'admin', 'admin', 'admin', 'admin@gmail.com', '$2y$10$0r/D9pUZuvGXbFPbVQAsNOCmZWVBL.gVv7/3YVrx0pMG3CzFN4UGy', 1, '2021-01-13 12:20:05'),
-(5, 'John', 'Doe', 'John', 'John@gmail.com', '$2y$10$ksveUFFX8v9.tN0Lg1VwxuYTAYlRZASgfMdKBRTvDiXP1GDdtasTu', 1, '2021-01-13 13:01:59'),
-(6, 'bibi', 'bios', 'jiojoim', 'emm@gmaill.com', '$2y$10$Xh7EKwi025yb.1wrDH/Y0O978wViczReqkMqf4q4Y99ud10W68CAe', 1, '2021-01-13 13:20:46'),
-(7, 'Bise', 'John', 'jiojoim', 'emmanuel.cabassot@laplateforme.io', '$2y$10$89/SfWObkE8kfm3bfM.RdeWKNHOaZgo/miHPyFKhteB/K8BIOtH2u', 1, '2021-01-13 13:24:58'),
-(8, 'pp', 'John', 'jiojoim', 'emmanuel.cabassot@laplateforme.io', '$2y$10$Gdk121.1Ha/Nkecq3/tbY.mRq/.Gxn3ohWTnATsWcsyBRO21sntHq', 1, '2021-01-13 13:28:41'),
-(9, 'Manuu', 'john', 'jiojoim', 'huoijhoij@gmail.com', '$2y$10$lxW9XiTduOaJlcIGvBtIYuPSloqbbJF/9MJUWk7DJ.jbuACGKvKYq', 1, '2021-01-22 09:42:49');
+(1, 'Manu', 'Cabassot', 'Manouelle', 'emmanu.cabassot@laplateforme.io', '$2y$10$VY8GaF0nDq8fDXYvsLr3ieRBac9084veBCiWn.0Ek5N2xOJxPGSDa', 200, '2021-01-12 22:25:23'),
+(2, 'Olive', 'Puche', 'Olivier', 'olivier.puche@laplateforme.io', '$2y$10$kMyjwWvB1ZJ9TwzkQgLZdOHN.2j7mBauED6YolKwisR.YdJeRSE72', 100, '2021-01-12 22:40:05'),
+(3, 'Fabino', 'Tenorio', 'Fabio', 'fabio.tenorio@laplateforme.io', '$2y$10$2I22etbziDLfx1Sqn6hvyOKRA.pqVABqlqwb0HaEeeVJOmf4UmJDO', 200, '2021-01-12 22:57:27'),
+(4, 'admin', 'admin', 'admin', 'admin@gmail.com', '$2y$10$0r/D9pUZuvGXbFPbVQAsNOCmZWVBL.gVv7/3YVrx0pMG3CzFN4UGy', 1, '2021-01-13 11:20:05'),
+(5, 'John', 'Doe', 'John', 'John@gmail.com', '$2y$10$ksveUFFX8v9.tN0Lg1VwxuYTAYlRZASgfMdKBRTvDiXP1GDdtasTu', 1, '2021-01-13 12:01:59'),
+(6, 'bibi', 'bios', 'jiojoim', 'emm@gmaill.com', '$2y$10$Xh7EKwi025yb.1wrDH/Y0O978wViczReqkMqf4q4Y99ud10W68CAe', 1, '2021-01-13 12:20:46'),
+(7, 'Bise', 'John', 'jiojoim', 'emmanuel.cabassot@laplateforme.io', '$2y$10$89/SfWObkE8kfm3bfM.RdeWKNHOaZgo/miHPyFKhteB/K8BIOtH2u', 1, '2021-01-13 12:24:58'),
+(8, 'pp', 'John', 'jiojoim', 'emmanuel.cabassot@laplateforme.io', '$2y$10$Gdk121.1Ha/Nkecq3/tbY.mRq/.Gxn3ohWTnATsWcsyBRO21sntHq', 1, '2021-01-13 12:28:41'),
+(9, 'Manuu', 'john', 'jiojoim', 'huoijhoij@gmail.com', '$2y$10$lxW9XiTduOaJlcIGvBtIYuPSloqbbJF/9MJUWk7DJ.jbuACGKvKYq', 1, '2021-01-22 08:42:49'),
+(10, 'fabio', 'tenorio', 'fabio', 'fabio@gmail.com', '$2y$10$.nInKlO11g0Zw6C.UhIfk.p2jGUEfKA4iK5stcR4zJIH6zxN.tzTa', 1, '2021-04-23 15:18:21');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `vues`
+-- Table structure for table `vues`
 --
 
-DROP TABLE IF EXISTS `vues`;
-CREATE TABLE IF NOT EXISTS `vues` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `vues` (
+  `id` int(11) NOT NULL,
   `id_topic` int(11) NOT NULL,
-  `id_conversation` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1233 DEFAULT CHARSET=utf8mb4;
+  `id_conversation` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
--- Déchargement des données de la table `vues`
+-- Dumping data for table `vues`
 --
 
 INSERT INTO `vues` (`id`, `id_topic`, `id_conversation`) VALUES
@@ -1479,9 +1463,161 @@ INSERT INTO `vues` (`id`, `id_topic`, `id_conversation`) VALUES
 (1229, 10, 107),
 (1230, 10, 107),
 (1231, 11, 105),
-(1232, 10, 107);
-COMMIT;
+(1232, 10, 107),
+(1233, 11, 105),
+(1234, 11, 105),
+(1235, 11, 105),
+(1236, 11, 105),
+(1237, 11, 105),
+(1238, 11, 105),
+(1239, 11, 105),
+(1240, 11, 105),
+(1241, 11, 105),
+(1242, 11, 105),
+(1243, 11, 105),
+(1244, 11, 105),
+(1245, 11, 105),
+(1246, 10, 107),
+(1247, 3, 89),
+(1248, 3, 89),
+(1249, 3, 89),
+(1250, 3, 89),
+(1251, 3, 89),
+(1252, 3, 89),
+(1253, 3, 89),
+(1257, 10, 107),
+(1256, 10, 107),
+(1258, 10, 107),
+(1259, 10, 107),
+(1260, 10, 107),
+(1261, 10, 107),
+(1262, 10, 107),
+(1263, 10, 107),
+(1264, 10, 107),
+(1265, 3, 89),
+(1266, 10, 107),
+(1267, 3, 89),
+(1268, 3, 89),
+(1269, 3, 89),
+(1270, 10, 107),
+(1271, 10, 107),
+(1272, 10, 107),
+(1273, 10, 107),
+(1274, 10, 107),
+(1275, 10, 107),
+(1276, 3, 87),
+(1277, 3, 87),
+(1278, 3, 87),
+(1279, 3, 87),
+(1280, 3, 89),
+(1281, 3, 89),
+(1282, 11, 109),
+(1283, 11, 109),
+(1284, 11, 109),
+(1285, 11, 109),
+(1286, 11, 110),
+(1287, 11, 110),
+(1288, 11, 110),
+(1289, 11, 110),
+(1290, 11, 109),
+(1291, 11, 109);
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `commentaires`
+--
+ALTER TABLE `commentaires`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `conversations`
+--
+ALTER TABLE `conversations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dislike`
+--
+ALTER TABLE `dislike`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `likes`
+--
+ALTER TABLE `likes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `messages`
+--
+ALTER TABLE `messages`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `topic`
+--
+ALTER TABLE `topic`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `utilisateurs`
+--
+ALTER TABLE `utilisateurs`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `vues`
+--
+ALTER TABLE `vues`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `commentaires`
+--
+ALTER TABLE `commentaires`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+--
+-- AUTO_INCREMENT for table `conversations`
+--
+ALTER TABLE `conversations`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
+--
+-- AUTO_INCREMENT for table `dislike`
+--
+ALTER TABLE `dislike`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
+--
+-- AUTO_INCREMENT for table `likes`
+--
+ALTER TABLE `likes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=213;
+--
+-- AUTO_INCREMENT for table `messages`
+--
+ALTER TABLE `messages`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
+--
+-- AUTO_INCREMENT for table `topic`
+--
+ALTER TABLE `topic`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+--
+-- AUTO_INCREMENT for table `utilisateurs`
+--
+ALTER TABLE `utilisateurs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT for table `vues`
+--
+ALTER TABLE `vues`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1292;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

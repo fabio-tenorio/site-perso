@@ -7,7 +7,7 @@ session_start();
 
 function profil () {
     // checker la connexion à bdd
-    $database = mysqli_connect ("localhost:3306", "fabio-tenorio", "owP97b~3", "fabio-tenorio-de-carvalho_discussion");
+    $database = mysqli_connect ("localhost:3306", "fabio-tenorio", "t84ehC0^", "fabio-tenorio-de-carvalho_discussion");
     if (mysqli_connect_errno()) {
         echo "The connexion to the database failed".mysqli_connect_error();
         exit();

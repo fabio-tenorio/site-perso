@@ -68,7 +68,7 @@
                     <p class="about__description">
                         Pendant 15 ans, j'ai exercé avec enthousiasme le métier d'enseignant et de chercheur au Brésil,
                         mon pays d'origine. En France depuis septembre 2019, j'ai décidé de rélier deux anciennes passions
-                        - l'éducation et l'informatique - afin de faire converger mes compétences vers un nouveau objectif
+                        - l'éducation et l'informatique - afin de faire converger mes compétences vers un nouvel objectif
                         professionnel: contribuer aux avancées technologiques dans le secteur des EdTech's.
                     </p>
                 </div>
@@ -333,7 +333,7 @@
                 <div class="col-sm-6 my-3 works__img">
                     <img class="works__prt" src="assets/images/forum.png" alt="">
                     <div class="works__data">
-                        <a target="blank" href="assets/projets/work-in-progress/work-in-progress.html" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <a target="blank" href="assets/projets/forum/index.php" class="works__link"><i class="bi bi-link-45deg"></i></a>
                         <span class="works__title">un forum sur l'informatique</span>
                         <p>en collaboration avec Emmanuel Cabassot et Olivier Puche</p>
                     </div>
@@ -341,7 +341,7 @@
                 <div class="col-sm-6 my-3 works__img">
                     <img class="works__prt" src="assets/images/boutique.png" alt="">
                     <div class="works__data">
-                        <a target="blank" href="assets/projets/work-in-progress/work-in-progress.html" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <a target="blank" href="assets/projets/boutique/index.php" class="works__link"><i class="bi bi-link-45deg"></i></a>
                         <span class="works__title">une boutique en ligne</span>
                         <p>en collaboration avec Olivier Puche</p>
                     </div>

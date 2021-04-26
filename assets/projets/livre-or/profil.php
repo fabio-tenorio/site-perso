@@ -6,7 +6,7 @@ login et son mot de passe.
 
 <?php
 session_start();
-$database = mysqli_connect ("localhost:3306", "fabio", "vtD*r569", "fabio-tenorio-de-carvalho_livreor");
+$database = mysqli_connect ("localhost:3306", "fabio-tenorio", "t84ehC0^", "fabio-tenorio-de-carvalho_livreor");
 // checker la connexion à bdd
 if (mysqli_connect_errno()) {
     echo "La connexion à la base de données a échouée".mysqli_connect_error();
@@ -18,7 +18,7 @@ if (isset($_POST["newlogin"]) and isset($_POST["newpass"])) {
         mysqli_query($database, $changelogin);
         echo ("<p class=\"cestbon\">modification réussie</p>");
     } else {
-        echo ("<p class=\"warning\">echec de la modification: </p>".msqli_error());
+        echo ("<p class=\"warning\">echec de la modification: </p>".mysqli_connect_error());
     }
 }
 //deconnexion

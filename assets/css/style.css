@@ -934,13 +934,17 @@ brique-top {
       width: 100%;
       height: 700px;
       -webkit-perspective: 800; /* For compatibility with iPhone 3.0, we leave off the units here */
+      perspective: 800;
       -webkit-perspective-origin: 50% 225px;
+      perspective-origin: 50% 225px;
     }
     #stage {
       width: 100%;
       height: 100%;
       -webkit-transition: -webkit-transform 2s;
+      transition: transform 2s;
       -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
     }
     
     #shape {
@@ -950,6 +954,7 @@ brique-top {
       height: 200px;
       width: 200px;
       -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
     }
     
     .plane {
@@ -958,7 +963,9 @@ brique-top {
       width: 200px;
       border: 1px solid white;
       -webkit-border-radius: 12px;
+      border-radius: 12px;
       -webkit-box-sizing: border-box;
+      box-sizing: border-box;
       text-align: center;
       font-family: Times, serif;
       font-size: 124pt;
@@ -972,10 +979,17 @@ brique-top {
 
     #shape.backfaces .plane {
       -webkit-backface-visibility: visible;
+      backface-visibility: visible;
     }
     
     #shape {
       -webkit-animation: spin 12s infinite linear;
+      animation: spin 12s infinite linear;
+    }
+
+    @keyframes spin {
+        from { -webkit-transform: rotateY(0); }
+        to   { -webkit-transform: rotateY(-360deg); }  
     }
 
     @-webkit-keyframes spin {
@@ -989,26 +1003,31 @@ brique-top {
     background-size: contain;
     opacity: 0.5;
     -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(90deg) translateZ(100px);
+    transform: scale3d(1.2, 1.2, 1.2) rotateX(90deg) translateZ(100px);
     }
 
     .cube > .two {
       opacity: 0.5;
       -webkit-transform: scale3d(1.2, 1.2, 1.2) translateZ(100px);
+      transform: scale3d(1.2, 1.2, 1.2) translateZ(100px);
     }
 
     .cube > .three {
       opacity: 0.5;
       -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(90deg) translateZ(100px);
+      transform: scale3d(1.2, 1.2, 1.2) rotateY(90deg) translateZ(100px);
     }
 
     .cube > .four {
       opacity: 0.5;
       -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(180deg) translateZ(100px);
+      transform: scale3d(1.2, 1.2, 1.2) rotateY(180deg) translateZ(100px);
     }
 
     .cube > .five {
       opacity: 0.5;
       -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(-90deg) translateZ(100px);
+      transform: scale3d(1.2, 1.2, 1.2) rotateY(-90deg) translateZ(100px);
     }
 
     .cube > .five img {
@@ -1019,6 +1038,7 @@ brique-top {
     .cube > .six {
       opacity: 0.5;
       -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(100px) rotate(180deg);
+      transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(100px) rotate(180deg);
     }
 
     /* ---------- ring styles ------------- */
@@ -1026,22 +1046,27 @@ brique-top {
     background-image: url("../images/livre-or.png");
     background-size: contain;
     -webkit-transform: translateZ(380px);
+    transform: translateZ(380px);
     }
 
     .ring > .two {
       -webkit-transform: rotateY(30deg) translateZ(380px);
+      transform: rotateY(30deg) translateZ(380px);
     }
 
     .ring > .three {
       -webkit-transform: rotateY(60deg) translateZ(380px);
+      transform: rotateY(60deg) translateZ(380px);
     }
 
     .ring > .four {
       -webkit-transform: rotateY(90deg) translateZ(380px);
+      transform: rotateY(90deg) translateZ(380px);
     }
 
     .ring > .five {
       -webkit-transform: rotateY(120deg) translateZ(380px);
+      transform: rotateY(120deg) translateZ(380px);
     }
 
     .rig > .five img {
@@ -1051,6 +1076,7 @@ brique-top {
 
     .ring > .six {
       -webkit-transform: rotateY(150deg) translateZ(380px);
+      transform: rotateY(150deg) translateZ(380px);
     }
 
     .controls {
@@ -1058,6 +1084,7 @@ brique-top {
       margin: 0 auto;
       padding: 5px 20px;
       -webkit-border-radius: 12px;
+      border-radius: 12px;
       background-color: rgba(255, 255, 255, 0.5);
     }
     .controls > div {

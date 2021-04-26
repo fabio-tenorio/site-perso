@@ -5,10 +5,10 @@ Namespace App\Application;
 
 abstract class Model
 {
-    private $db_host = 'localhost';
-    private $db_login = 'root';
-    private $db_password = '';
-    private $db_name = 'boutique';
+    private $db_host = 'localhost:3306';
+    private $db_login = 'fabio-tenorio';
+    private $db_password = 't84ehC0^';
+    private $db_name = 'fabio-tenorio-de-carvalho_boutique';
     private $db_charset = 'utf8mb4';
     protected $_PDO;
     // private $whitelist;

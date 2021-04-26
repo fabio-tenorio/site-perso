@@ -13,8 +13,8 @@ class Db extends PDO
 
     // Informations de connexion
     private const DBHOST = 'localhost:3306';
-    private const DBUSER = 'fabiovalho';
-    private const DBPASS = 'zm&Hl502';
+    private const DBUSER = 'fabio-tenorio';
+    private const DBPASS = 't84ehC0^';
     private const DBNAME = 'fabio-tenorio-de-carvalho_forum';
 
     private function __construct()

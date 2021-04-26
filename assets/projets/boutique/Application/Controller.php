@@ -47,22 +47,22 @@ abstract class Controller
         {
             // d'abord le header
             ob_start();
-            $viewHeader = 'View'.DIRECTORY_SEPARATOR.'header.php';
+            $viewHeader = 'view'.DIRECTORY_SEPARATOR.'header.php';
             require_once $viewHeader;
             $contentHeader = ob_get_clean();
             //ensuite le main
             ob_start();
-            $viewMain = 'View'.DIRECTORY_SEPARATOR.strtolower($fichier).'.php';
+            $viewMain = 'view'.DIRECTORY_SEPARATOR.strtolower($fichier).'.php';
             require_once $viewMain;
             $contentMain = ob_get_clean();
             //enfin, le footer
             ob_start();
-            $viewFooter = 'View'.DIRECTORY_SEPARATOR.'footer.php';
+            $viewFooter = 'view'.DIRECTORY_SEPARATOR.'footer.php';
             require_once $viewFooter;
             $contentFooter = ob_get_clean();
     
             // On fabrique le "template"
-            require_once 'View/template.php';
+            require_once 'view'.DIRECTORY_SEPARATOR.'template.php';
         }
 
         static public function page_error() {
