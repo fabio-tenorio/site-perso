@@ -21,7 +21,7 @@ class ControllerUser extends Controller
     {
         $this->user = new ModelUser();
         $this->produits = new ControllerProduits();
-        if (isset($_SESSION['user']))
+        if (isset($_SESSION['user']) and is_object($_SESSION['user']))
         {
             $this->id = $_SESSION['user']->id;
             $this->login = $_SESSION['user']->login;

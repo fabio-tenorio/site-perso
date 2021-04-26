@@ -38,7 +38,8 @@
     <li class="membres-nav nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="bi bi-person"></i>  
-      <?php echo $_SESSION['user']->login; ?>
+      <?php if (isset($_SESSION['user']) and is_object($_SESSION['user'])) {
+        echo $_SESSION['user']->login;} ?>
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
         <a class="dropdown-item" href="http://<?php echo PATH;?>/ControllerUser/profil"><i class="bi bi-person-badge mr-2"></i>Profil</a>

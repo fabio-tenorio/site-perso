@@ -1,5 +1,11 @@
 <?php
-session_start();
+if (isset($_SESSION) and !is_object($_SESSION['user'])) {
+    session_destroy();
+    session_start();
+} else {
+    session_start();
+}
+
 
 require_once 'autoloader.php';
 // require_once 'phpmailer.php';

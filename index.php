@@ -253,7 +253,7 @@
             </div>
         </section>
         <section class="works section" id="portfolio">
-        <div class="controls">
+        <!-- <div class="controls">
             <h1>Animations, Transitions and 3D Transforms</h1>
             <p>This demo shows some more interesting content using 3D transforms, animations and transitions.
             Note that you can still select the text on the the elements, even while they are rotating. Transforms elements remain
@@ -269,71 +269,39 @@
             <div id="stage">
                 <div id="shape" class="cube backfaces">
                     <div class="plane one">
-                        <!-- <a target="blank" href="assets/projets/livre-or/index.php">un livre d'or</a> -->
-                        <!-- <h3>Un livre d'or dédié à Spinoza</h3>
-                        <h4>l'un de mes premiers projets en PHP</h4> -->
+                        <a target="blank" href="assets/projets/livre-or/index.php">un livre d'or</a>
+                        <h3>Un livre d'or dédié à Spinoza</h3>
+                        <h4>l'un de mes premiers projets en PHP</h4>
                     </div>
                     <div class="plane two">
-                        <!-- <a target="blank" href="assets/projets/app-favorites/app-favorites.html">site sur mes app favorites</a> -->
+                        <a target="blank" href="assets/projets/app-favorites/app-favorites.html">site sur mes app favorites</a>
                     </div>
                     <div class="plane three">
-                        <!-- <a target="blank" href="assets/projets/voyages/voyages.html">un site de voyages</a> -->
+                        <a target="blank" href="assets/projets/voyages/voyages.html">un site de voyages</a>
                     </div>
                     <div class="plane four">
-                        <!-- <a target="blank" href="assets/projets/discussion/index.php">un espace de discussion</a> -->
+                        <a target="blank" href="assets/projets/discussion/index.php">un espace de discussion</a>
                     </div>
                     <div class="plane five">
                         <img class="works__prt" src="assets/images/forum.png" alt="">
                     </div>
                     <div class="plane six">6</div>
-                    <!-- <div class="plane seven">7</div>
+                    <div class="plane seven">7</div>
                     <div class="plane eight">8</div>
                     <div class="plane nine">9</div>
                     <div class="plane ten">10</div>
                     <div class="plane eleven">11</div>
-                    <div class="plane twelve">12</div> -->
+                    <div class="plane twelve">12</div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <h2 class="section-title">Mes projets</h2>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 my-3 works__img">
-                    <img class="works__prt" src="assets/images/livre-or.png" alt="">
-                    <div class="works__data">
-                        <a target="blank" href="assets/projets/livre-or/index.php" class="works__link"><i class="bi bi-link-45deg"></i></a>
-                        <span class="works__title">Un livre d'or dédié à Spinoza</span>
-                        <p>l'un de mes premiers projets en PHP</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 my-3 works__img">
-                    <img class="works__prt" src="assets/images/app-favorites.png" alt="">
-                    <div class="works__data">
-                        <a target="blank" href="assets/projets/app-favorites/app-favorites.html" class="works__link"><i class="bi bi-link-45deg"></i></a>
-                        <span class="works__title">mes applications favorites</span>
-                        <p>histoire de pratiquer un peu du CSS</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 my-3 works__img">
-                    <img class="works__prt" src="assets/images/voyages.png" alt="">
-                    <div class="works__data">
-                        <a target="blank" href="assets/projets/voyages/voyages.html" class="works__link"><i class="bi bi-link-45deg"></i></a>
-                        <span class="works__title">un site de voyages</span>
-                        <p>en collaboration avec Claude Rodrigues et Evan Azemard</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 my-3 works__img">
-                    <img class="works__prt" src="assets/images/discussion.png" alt="">
-                    <div class="works__data">
-                        <a target="blank" href="assets/projets/discussion/index.php" class="works__link"><i class="bi bi-link-45deg"></i></a>
-                        <span class="works__title">un espace de discussion</span>
-                        <p>projet réalisé en PHP, MySQL, HTML et CSS</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 my-3 works__img">
                     <img class="works__prt" src="assets/images/forum.png" alt="">
                     <div class="works__data">
-                        <a target="blank" href="assets/projets/forum/index.php" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <a target="_blank" href="assets/projets/forum/index.php" class="works__link"><i class="bi bi-link-45deg"></i></a>
                         <span class="works__title">un forum sur l'informatique</span>
                         <p>en collaboration avec Emmanuel Cabassot et Olivier Puche</p>
                     </div>
@@ -341,9 +309,41 @@
                 <div class="col-sm-6 my-3 works__img">
                     <img class="works__prt" src="assets/images/boutique.png" alt="">
                     <div class="works__data">
-                        <a target="blank" href="assets/projets/boutique/index.php" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <a target="_blank" href="assets/projets/boutique/index.php" class="works__link"><i class="bi bi-link-45deg"></i></a>
                         <span class="works__title">une boutique en ligne</span>
                         <p>en collaboration avec Olivier Puche</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-3 works__img">
+                    <img class="works__prt" src="assets/images/discussion.png" alt="">
+                    <div class="works__data">
+                        <a target="_blank" href="assets/projets/discussion/index.php" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <span class="works__title">un espace de discussion</span>
+                        <p>projet réalisé en PHP, MySQL, HTML et CSS</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-3 works__img">
+                    <img class="works__prt" src="assets/images/livre-or.png" alt="">
+                    <div class="works__data">
+                        <a target="_blank" href="assets/projets/livre-or/index.php" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <span class="works__title">Un livre d'or dédié à Spinoza</span>
+                        <p>l'un de mes premiers projets en PHP</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-3 works__img">
+                    <img class="works__prt" src="assets/images/app-favorites.png" alt="">
+                    <div class="works__data">
+                        <a target="_blank" href="assets/projets/app-favorites/app-favorites.html" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <span class="works__title">mes applications favorites</span>
+                        <p>histoire de pratiquer un peu du CSS</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-3 works__img">
+                    <img class="works__prt" src="assets/images/voyages.png" alt="">
+                    <div class="works__data">
+                        <a target="_blank" href="assets/projets/voyages/voyages.html" class="works__link"><i class="bi bi-link-45deg"></i></a>
+                        <span class="works__title">un site de voyages</span>
+                        <p>en collaboration avec Claude Rodrigues et Evan Azemard</p>
                     </div>
                 </div>
             </div>

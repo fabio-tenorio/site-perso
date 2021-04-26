@@ -22,7 +22,7 @@ class ControllerProduits extends Controller
     public function __construct()
     {
         $this->produit = new ModelProduits;
-        if (isset($_SESSION['user']))
+        if (isset($_SESSION['user']) and is_object($_SESSION['user']))
         {
             $this->id = $_SESSION['user']->id;
             $this->login = $_SESSION['user']->login;
